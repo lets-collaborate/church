@@ -45,8 +45,69 @@
 .page-content .board-wrapper .board-list.option-status tr.hold td:last-child:after {
     content: '답변대기';
     background-color: #999;
-
 }
+
+.page-content .board-wrapper .faq-list {
+    padding-bottom: 1rem;
+}
+
+.page-content .board-wrapper .faq-list>li+li {
+    margin-top: 1rem;
+}
+
+.page-content .board-wrapper .faq-list>li dl>*::before {
+    position: absolute;
+    font-size: var(--font-size-basic);
+    font-weight: var(--bold);
+    left: 2rem;
+}
+
+.page-content .board-wrapper .faq-list>li dl>dt::before {
+    top: 0.9rem;
+    content: 'Q';
+    color: #586e96;
+}
+
+.page-content .board-wrapper .faq-list>li dl>dd::before {
+    top: 2rem;
+    content: 'A';
+    color: #7da4bf;
+}
+
+.page-content .board-wrapper .faq-list>li dl>dt {
+    position: relative;
+    background-color: #fbfbfb;
+    padding: 1rem 2rem 1rem 4rem;
+    font-weight: var(--bold);
+    color: var(--gray-dark2);
+    border: 1px solid var(--gray-neutral3);
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+}
+
+.page-content .board-wrapper .faq-list>li dl>dt>button {
+    text-align: left;
+}
+
+.page-content .board-wrapper .faq-list>li dl>dd {
+    position: relative;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 5s ease-out;
+}
+
+.page-content .board-wrapper .faq-list>li.active dl>dd {
+    max-height: 9999px;
+    transition: max-height 3s ease-in;
+}
+
+.page-content .board-wrapper .faq-list>li dl>dd .answer {
+    color: var(--gray-dark2);
+    padding: 2rem 2rem 2rem 4rem;
+    border: 1px solid var(--gray-neutral3);
+}
+
+
 
 @media (max-width: 767px) {
 
