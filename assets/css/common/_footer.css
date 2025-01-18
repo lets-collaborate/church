@@ -1,0 +1,112 @@
+footer {
+    background-color: #3e4148;
+    color: #fff;
+}
+
+footer .link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #303338;
+}
+
+footer .link-wrapper .term-list {
+    display: flex;
+    gap: 3rem;
+}
+
+footer .link-wrapper .term-list>li>a {
+    font-size: var(--font-size-normal)
+}
+
+footer .link-wrapper .sns-list {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .link-wrapper .sns-list>li {
+    text-indent: -9999px;
+}
+
+footer .link-wrapper .sns-list>li>.icon {
+    display: block;
+    width: 3.9rem;
+    height: 3.8rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+footer .link-wrapper .sns-list>li>.icon.facebook {
+    background-image: url(../../images/icon_facebook.gif)
+}
+
+footer .link-wrapper .sns-list>li>.icon.blog {
+    background-image: url(../../images/icon_blog.gif)
+}
+
+footer .link-wrapper .sns-list>li>.icon.youtube {
+    background-image: url(../../images/icon_youtube.gif)
+}
+
+footer .link-wrapper .sns-list>li>.icon.kakao {
+    background-image: url(../../images/icon_kakao.png)
+}
+
+footer .link-wrapper .sns-list>li>.icon.insta {
+    background-image: url(../../images/icon_insta.png)
+}
+
+footer .info-wrapper {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    background: url(../../images/logo_footer.png) no-repeat right 3.5rem;
+    background-size: 22rem;
+}
+
+footer .info-wrapper .info-list>li {
+    color: #cbcbcb;
+    font-size: var(--font-size-basic);
+    line-height: 2.6rem;
+}
+
+footer .info-wrapper .copyright {
+    color: #8f8f8f;
+    text-transform: uppercase;
+    font-size: var(--font-size-small);
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 1023px) {
+    footer .link-wrapper {
+        border-bottom: none;
+        display: block;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    footer .link-wrapper .term-list {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #303338;
+    }
+
+    footer .link-wrapper .term-list>li {
+        flex: 0 0 auto;
+    }
+
+    footer .link-wrapper .sns-list {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    footer .info-wrapper {
+        padding-top: 1.5rem;
+        padding-bottom: 14rem;
+        background-position: bottom 3rem left 1.5rem;
+    }
+}

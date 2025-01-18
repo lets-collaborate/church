@@ -1,0 +1,86 @@
+.page-content .board-wrapper .board-list tr {
+    cursor: pointer;
+}
+
+.board-wrapper .board-list td:not(:nth-child(2)) {
+    text-align: center;
+}
+
+.page-content .board-wrapper .board-list th:nth-child(2),
+.page-content .board-wrapper .board-list td:nth-child(2) {
+    min-width: 30rem;
+    white-space: normal;
+}
+
+.page-content .board-wrapper .board-list tr.notice td:nth-child(1),
+.page-content .board-wrapper .board-list tr.notice td:nth-child(2) {
+    font-weight: var(--bold);
+}
+
+.page-content .board-wrapper .board-list.option-status tr td:last-child {
+    min-width: 6rem;
+}
+
+.page-content .board-wrapper .board-list.option-status tr td:last-child:after {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 6rem;
+    height: 2.5rem;
+    line-height: 2.6rem;
+    text-align: center;
+    font-size: var(--font-size-xs);
+    font-weight: var(--bold);
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.page-content .board-wrapper .board-list.option-status tr.success td:last-child:after {
+    content: '답변완료';
+    background-color: var(--red);
+}
+
+.page-content .board-wrapper .board-list.option-status tr.hold td:last-child:after {
+    content: '답변대기';
+    background-color: #999;
+
+}
+
+@media (max-width: 767px) {
+
+    .page-content .board-wrapper .board-list th:not(:nth-child(2)):not(:nth-child(3)),
+    .page-content .board-wrapper .board-list td:not(:nth-child(2)):not(:nth-child(3)) {
+        display: none;
+    }
+
+    .page-content .board-wrapper .board-list th:nth-child(2),
+    .page-content .board-wrapper .board-list td:nth-child(2) {
+        min-width: auto;
+    }
+
+    .page-content .board-wrapper .board-list.option-status tr td:nth-child(2):after {
+        display: inline-block;
+        padding: 0 0.5rem;
+        height: 2rem;
+        line-height: 2.1rem;
+        text-align: center;
+        font-size: 10px;
+        font-weight: var(--bold);
+        color: #fff;
+        border-radius: 0.5rem;
+        margin-left: 0.5rem;
+        vertical-align: middle;
+    }
+
+    .page-content .board-wrapper .board-list.option-status tr.success td:nth-child(2):after {
+        content: '답변완료';
+        background-color: var(--red);
+    }
+
+    .page-content .board-wrapper .board-list.option-status tr.hold td:nth-child(2):after {
+        content: '답변대기';
+        background-color: #999;
+    }
+}
