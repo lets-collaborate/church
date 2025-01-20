@@ -1,6 +1,6 @@
-@import "./_reset.css";
-@import "./_font.css";
-@import "./_color.css";
-@import "./_layout.css";
-@import "./_header.css";
-@import "./_footer.css";
+@import "./reset.css";
+@import "./font.css";
+@import "./color.css";
+@import "./layout.css";
+@import "./header.css";
+@import "./footer.css";
