@@ -250,7 +250,6 @@ select.custom {
     background: url(../../images/select_arrow_down.png) no-repeat center right 0.5rem;
     background-size: 1.4rem;
     min-width: 7rem;
-
 }
 
 .textarea.custom {
@@ -277,6 +276,7 @@ select.custom {
 }
 
 input.custom {
+    width: 100%;
     border: 1px solid var(--gray-mid2);
     color: var(--gray-dark3);
     height: 3rem;
@@ -284,14 +284,15 @@ input.custom {
     padding-right: 1rem;
     box-sizing: border-box;
     border-radius: 0.3rem;
+    font-size: var(--font-size-small);
 }
 
 input.custom.wd-small {
-    width: 7rem;
+    max-width: 7rem;
 }
 
 input.custom.wd-medium {
-    width: 10rem;
+    max-width: 10rem;
 }
 
 .check-wrapper {
@@ -1066,7 +1067,6 @@ input.custom.wd-medium {
 
 .page-wrapper .page-sidebar .login-wrapper .input-wrapper dl>dd input {
     display: block;
-    width: 100%;
 }
 
 .page-wrapper .page-sidebar .login-wrapper .option-wrapper {
