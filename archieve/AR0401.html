@@ -16,19 +16,26 @@
                 <ul>
                     <li><a href="../login/ST0101.html" class="icon user">회원가입</a></li>
                     <li><a href="../login/ST0201.html" class="icon power">로그인</a></li>
-                    <li><a href="javascript:;" class="icon search">검색</a></li>
+                    <li class="search-wrapper">
+                        <div class="search-input">
+                            <input type="text">
+                            <a href="javascript:;" class="icon search">검색</a>
+                        </div>
+                        <a href="javascript:;" id="hideSearchBox" class="icon close">닫기</a>
+                    </li>
+                    <li><a href="javascript:;" id="showSearchBox" class="icon search">검색</a></li>
                 </ul>
             </div>
         </div>
         <nav class="gnb-wrapper inner">
             <div class="gnb-content">
-                <button type="button" class="gnb-btn">&#9776;</button>
+                <button type="button" id="toggleMobileMenu" class="gnb-btn">&#9776;</button>
                 <h1><a href="../index.html">디모데성경연구원</a></h1>
                 <div class="list-wrapper">
                     <div class="user-wrapper">
                         <div class="user-info">
                             <div class="user-image">
-                                <img src="./assets/images/profile.gif" alt="">
+                                <img src="../assets/images/profile.gif" alt="">
                             </div>
                             <span>로그인을 해주세요</span>
                             <button type="button" class="icon close">닫기</button>
@@ -47,27 +54,31 @@
                         <a class="icon search" href="javascript:;">검색</a>
                     </div>
                     <ul class="gnb-list">
-                        <li class="depth01">
-                            <a href="../introduce/IN0101.html">
-                                <h2>기관소개</h2>
+                        <li>
+                            <div class="depth01">
+                                <a href="../introduce/IN0101.html">
+                                    <h2>기관소개</h2>
+                                </a>
                                 <button type="button" class="toggle-btn">
-                                    <img class="on" src="./assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="./assets/images/icon_arrow_down.png" alt="">
+                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
+                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
                                 </button>
-                            </a>
+                            </div>
                             <ul class="depth02">
                                 <li><a href="../introduce/IN0101.html">디모데성경연구원</a></li>
                                 <li><a href="../introduce/IN0301.html">후원안내</a></li>
                             </ul>
                         </li>
-                        <li class="depth01">
-                            <a href="../seminar/SE0101.html">
-                                <h2>세미나</h2>
+                        <li>
+                            <div class="depth01">
+                                <a href="../seminar/SE0101.html">
+                                    <h2>세미나</h2>
+                                </a>
                                 <button type="button" class="toggle-btn">
-                                    <img class="on" src="./assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="./assets/images/icon_arrow_down.png" alt="">
+                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
+                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
                                 </button>
-                            </a>
+                            </div>
                             <ul class="depth02">
                                 <li><a href="../seminar/SE0101.html">세미나 신청</a></li>
                                 <li><a href="../seminar/SE0201.html">세미나 진행교회</a></li>
@@ -75,14 +86,18 @@
                                 <li><a href="../seminar/SE0401.html">세미나 후기</a></li>
                             </ul>
                         </li>
-                        <li class="depth01">
-                            <a href="../shop/SH0101.html">
-                                <h2>쇼핑몰</h2>
+                        <li>
+                            <div class="depth01">
+                                <a href="../shop/SH0101.html">
+                                    <h2>쇼핑몰</h2>
+                                </a>
+                                <!-- 
                                 <button type="button" class="toggle-btn">
-                                    <img class="on" src="./assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="./assets/images/icon_arrow_down.png" alt="">
+                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
+                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
                                 </button>
-                            </a>
+                                -->
+                            </div>
                             <!-- 
                             <ul class="depth02">
                                 <li><a href="../shop/SH0101.html">강사패키지</a></li>
@@ -93,28 +108,33 @@
                             </ul>
                              -->
                         </li>
-                        <li class="depth01">
-                            <a href="../archieve/AR0401.html">
-                                <h2 class="red">자료실</h2>
+                        <li>
+                            <div class="depth01">
+                                <a href="../archieve/AR0401.html">
+                                    <h2 class="red">자료실</h2>
+                                </a>
                                 <button type="button" class="toggle-btn">
-                                    <img class="on" src="./assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="./assets/images/icon_arrow_down.png" alt="">
+                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
+                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
                                 </button>
-                            </a>
+                            </div>
                             <ul class="depth02">
                                 <li><a href="../archieve/AR0201.html">사진게시판</a></li>
                                 <li><a href="../archieve/AR0301.html">칼럼</a></li>
                                 <li class="red"><a href="../archieve/AR0401.html">자료실</a></li>
                             </ul>
                         </li>
-                        <li class="depth01">
-                            <a href="../support/SU0101.html">
-                                <h2>고객센터</h2>
+                        <li>
+                            <div class="depth01">
+                                <a href="../support/SU0101.html">
+                                    <h2>고객센터</h2>
+                                </a>
                                 <button type="button" class="toggle-btn">
-                                    <img class="on" src="./assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="./assets/images/icon_arrow_down.png" alt="">
+                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
+                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
                                 </button>
-                            </a>
+
+                            </div>
                             <ul class="depth02">
                                 <li><a href="../support/SU0101.html">공지사항</a></li>
                                 <li><a href="../support/SU0201.html">FAQ</a></li>
@@ -140,8 +160,9 @@
                                 <option value="1">번호</option>
                                 <option value="2" selected>제목</option>
                                 <option value="3">작성자</option>
-                                <option value="4">날짜</option>
-                                <option value="5">태그</option>
+                                <option value="4">내용</option>
+                                <option value="5">날짜</option>
+                                <option value="6">태그</option>
                             </select>
                             <input type="text" class="custom">
                             <a href="javascript:;" class="button gray-radius">검색</a>
@@ -159,91 +180,91 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="notice">
+                                <tr class="notice" onClick="location.href='./AR0402.html'">
                                     <td>공지</td>
                                     <td class="file">ppt 폰트 다운로드 안내</td>
                                     <td>디모데성경연구원</td>
                                     <td>2019-08-12</td>
                                     <td>1970</td>
                                 </tr>
-                                <tr class="notice">
+                                <tr class="notice" onClick="location.href='./AR0402.html'">
                                     <td>공지</td>
                                     <td class="file">가정에서 함께하는 신약의 파노라마 요약 출력용</td>
                                     <td>디모데성경연구원</td>
                                     <td>2019-07-23</td>
                                     <td>2109</td>
                                 </tr>
-                                <tr class="notice">
+                                <tr class="notice" onClick="location.href='./AR0402.html'">
                                     <td>공지</td>
                                     <td class="file">가정에서 함께하는 신약의 파노라마 요약 출력용</td>
                                     <td>디모데성경연구원</td>
                                     <td>2019-07-23</td>
                                     <td>3047</td>
                                 </tr>
-                                <tr class="notice">
+                                <tr class="notice" onClick="location.href='./AR0402.html'">
                                     <td>공지</td>
                                     <td class="file">학생용 수료증 출력하여 사용하세요. (A4 / A5 / 레터)</td>
                                     <td>디모데성경연구원</td>
                                     <td>2019-07-23</td>
                                     <td>3703</td>
                                 </tr>
-                                <tr>
+                                <tr onClick="location.href='./AR0402.html'">
                                     <td>58</td>
                                     <td class="file">성공 너머의 삶 포스터</td>
                                     <td>디모데성경연구원</td>
                                     <td>2022-12-20</td>
                                     <td>223</td>
                                 </tr>
-                                <tr>
+                                <tr onClick="location.href='./AR0402.html'">
                                     <td>57</td>
                                     <td class="file">성도답게 행하라 포스터</td>
                                     <td>디모데성경연구원</td>
                                     <td>2022-12-20</td>
                                     <td>280</td>
                                 </tr>
-                                <tr>
+                                <tr onClick="location.href='./AR0402.html'">
                                     <td>56</td>
                                     <td class="file">하나님께 선택받은 자의 삶 포스터</td>
                                     <td>디모데성경연구원</td>
                                     <td>2022-11-10</td>
                                     <td>113</td>
                                 </tr>
-                                <tr>
+                                <tr onClick="location.href='./AR0402.html'">
                                     <td>55</td>
                                     <td class="file">하나님이 조각하시는 걸작품 인생 포스터</td>
                                     <td>디모데성경연구원</td>
                                     <td>2022-11-10</td>
                                     <td>170</td>
                                 </tr>
-                                <tr>
+                                <tr onClick="location.href='./AR0402.html'">
                                     <td>54</td>
                                     <td class="file">영적 성장의 파노라마 A3 포스터</td>
                                     <td>디모데성경연구원</td>
                                     <td>2021-11-12</td>
                                     <td>351</td>
                                 </tr>
-                                <tr>
+                                <tr onClick="location.href='./AR0402.html'">
                                     <td>53</td>
                                     <td class="file">신구약의 파노라마 홍보영상</td>
                                     <td>디모데성경연구원</td>
                                     <td>2021-03-02</td>
                                     <td>583</td>
                                 </tr>
-                                <tr>
+                                <tr onClick="location.href='./AR0402.html'">
                                     <td>52</td>
                                     <td class="file">크리스천베이직&베이직플러스 A3 포스터</td>
                                     <td>디모데성경연구원</td>
                                     <td>2020-11-05</td>
                                     <td>351</td>
                                 </tr>
-                                <tr>
+                                <tr onClick="location.href='./AR0402.html'">
                                     <td>51</td>
                                     <td class="file">신약 책별 성경 연구 이미지 소스 / 포스터 A3</td>
                                     <td>디모데성경연구원</td>
                                     <td>2019-09-18</td>
                                     <td>784</td>
                                 </tr>
-                                <tr>
+                                <tr onClick="location.href='./AR0402.html'">
                                     <td>50</td>
                                     <td class="file">구약 책별 성경 연구 이미지 소스 / A3 포스터</td>
                                     <td>디모데성경연구원</td>
@@ -258,7 +279,7 @@
                             <a href="javascript:;" class="paging-button prev-all">맨앞으로</a>
                             <a href="javascript:;" class="paging-button prev">이전</a>
                             <ul class="paging-number">
-                                <li><a href="javascript:;">1</a></li>
+                                <li class="active"><a href="javascript:;">1</a></li>
                                 <li><a href="javascript:;">2</a></li>
                             </ul>
                             <a href="javascript:;" class="paging-button next">다음</a>
@@ -489,6 +510,33 @@
             <p class="copyright">Copyright © 2019 Worldteach All Rights Reserved.</p>
         </div>
     </footer>
+    <ul class="float-list">
+        <li>
+            <a class="float-icon" href="javascript:;">
+                <img src="../assets/images/icon_fix_coupon.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a class="float-icon" href="javascript:;">
+                <img src="../assets/images/icon_fix_cart.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a class="float-icon" href="javascript:;">
+                <img src="../assets/images/icon_fix_star.png" alt="">
+            </a>
+        </li>
+        <li>
+            <button type="button" id="scrollUp" class="float-icon">
+                <img src="../assets/images/icon_fix_up.png" alt="">
+            </button>
+        </li>
+        <li>
+            <button type="button" id="scrollDown" class="float-icon">
+                <img src="../assets/images/icon_fix_down.png" alt="">
+            </button>
+        </li>
+    </ul>
 </body>
 
 </html>

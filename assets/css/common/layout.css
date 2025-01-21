@@ -11,6 +11,10 @@
     text-decoration: line-through;
 }
 
+.pos-re {
+    position: relative;
+}
+
 .ellipsis {
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -19,6 +23,36 @@
 
 .mt-30 {
     margin-top: 3rem;
+}
+
+/* 전체 페이지 float 메뉴 */
+.float-list {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    border: 1px solid var(--gray-neutral3);
+    border-right: none;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.float-list > li + li {
+    border-top: 1px solid var(--gray-neutral3);
+}
+
+.float-list > li .float-icon {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.float-list > li .float-icon > img {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
 }
 
 /* 전체 페이지 하단 공통영역 */
@@ -209,7 +243,7 @@
     color: var(--gray-dark3);
 }
 
-.tab-list.radius>li.on>a {
+.tab-list.radius>li.active>a {
     background-color: var(--primary);
     color: #fff;
 }
@@ -224,6 +258,10 @@
     color: var(--gray-dark3);
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.tab-list.text>li.active>a {
+    font-weight: var(--bold);
 }
 
 .tab-list.text>li+li>a:after {
@@ -320,6 +358,36 @@ input.custom.wd-medium {
     border-radius: 0.3rem;
 }
 
+/* 전체 페이지 작성자 더보기 */
+.member-more {
+    display: none;
+    position: absolute;
+    left: calc(100% + 1rem);
+    top: .5rem;
+    width: max-content;
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0px 2px 4px -2px rgba(0,0,0,0.1);
+}
+
+.member-more.active {
+    display: block;
+}
+
+.member-more .member-name {
+    font-size: var(--font-size-basic);
+}
+
+.member-more a {
+    display: block;
+    padding-top: .5rem;
+    border-top: 1px solid #ddd;
+    margin-top: .5rem;
+    font-size: var(--font-size-xs);
+}
 
 
 
@@ -327,6 +395,7 @@ input.custom.wd-medium {
 
 
 
+/* --------------------------------------------------------------- */
 
 
 
@@ -427,6 +496,7 @@ input.custom.wd-medium {
     font-weight: var(--bold);
     background-color: var(--gray-lighter);
     box-sizing: border-box;
+    background-color: #eee;
 }
 
 .board-wrapper .board-list td {
@@ -538,6 +608,10 @@ input.custom.wd-medium {
     font-size: 10px;
 }
 
+.board-wrapper .board-paging .paging-wrapper .paging-number>li.active a{
+    font-weight: var(--bold);
+}
+
 /* 서브페이지 컨텐츠 영역 내 상세(상품) */
 .detail-wrapper .detail-content {
     margin-top: 10rem;
@@ -574,12 +648,13 @@ input.custom.wd-medium {
     font-weight: var(--bold);
 }
 
-.detail-wrapper .detail-content .tab-wrapper .tab-list>li.on>a {
+.detail-wrapper .detail-content .tab-wrapper .tab-list>li.active>a {
     background-color: #fff;
     color: var(--gray-dark3);
 }
 
 .detail-wrapper .detail-content .tab-wrapper .board-wrapper {
+    border-top: 2px solid var(--gray-neutral5);
     border-bottom: 1px solid var(--gray-neutral5);
 }
 
@@ -698,6 +773,7 @@ input.custom.wd-medium {
 .define-list>li dl {
     display: flex;
     align-items: stretch;
+    color: var(--gray-dark2);
 }
 
 .define-list>li dl>dt {
@@ -709,7 +785,6 @@ input.custom.wd-medium {
     width: 30%;
     min-width: 11rem;
     max-width: 18rem;
-    color: var(--gray-dark2);
     font-weight: var(--bold);
     background-color: #fbfbfb;
 }
@@ -963,6 +1038,7 @@ input.custom.wd-medium {
 }
 
 .word-wrapper .reply-wrapper .reply-list>li .reply .reply-text>dd {
+    color: var(--gray-dark1);
     margin-top: 1rem;
     font-size: var(--font-size-basic);
 }
@@ -1025,7 +1101,7 @@ input.custom.wd-medium {
     display: block;
     font-size: var(--font-size-large);
     letter-spacing: -0.1rem;
-    color: var(--gray-dark1);
+    color: var(--gray-dark2);
     height: 5.5rem;
     line-height: 5.5rem;
     padding-left: 2rem;
@@ -1177,6 +1253,11 @@ input.custom.wd-medium {
 
 @media (max-width: 1023px) {
 
+    /* 전체 페이지 float 메뉴 */
+    .float-list {
+        display: none;
+    }
+
     /* 전체 페이지 하단 공통영역 */
     .common-content .support-wrapper .support-list {
         flex-wrap: wrap;
@@ -1247,6 +1328,12 @@ input.custom.wd-medium {
 
     .common-content .info-wrapper .link-wrapper .link-list>li {
         flex-basis: 100%;
+    }
+    
+    /* 전체 페이지 작성자 더보기 */
+    .member-more {
+        left: 0;
+        top: calc(100% + .5rem);
     }
 
     /* 서브페이지 컨텐츠 영역 내 제목 */

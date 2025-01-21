@@ -16,19 +16,26 @@
                 <ul>
                     <li><a href="../login/ST0101.html" class="icon user">회원가입</a></li>
                     <li><a href="../login/ST0201.html" class="icon power">로그인</a></li>
-                    <li><a href="javascript:;" class="icon search">검색</a></li>
+                    <li class="search-wrapper">
+                        <div class="search-input">
+                            <input type="text">
+                            <a href="javascript:;" class="icon search">검색</a>
+                        </div>
+                        <a href="javascript:;" id="hideSearchBox" class="icon close">닫기</a>
+                    </li>
+                    <li><a href="javascript:;" id="showSearchBox" class="icon search">검색</a></li>
                 </ul>
             </div>
         </div>
         <nav class="gnb-wrapper inner">
             <div class="gnb-content">
-                <button type="button" class="gnb-btn">&#9776;</button>
+                <button type="button" id="toggleMobileMenu" class="gnb-btn">&#9776;</button>
                 <h1><a href="../index.html">디모데성경연구원</a></h1>
                 <div class="list-wrapper">
                     <div class="user-wrapper">
                         <div class="user-info">
                             <div class="user-image">
-                                <img src="./assets/images/profile.gif" alt="">
+                                <img src="../assets/images/profile.gif" alt="">
                             </div>
                             <span>로그인을 해주세요</span>
                             <button type="button" class="icon close">닫기</button>
@@ -47,27 +54,31 @@
                         <a class="icon search" href="javascript:;">검색</a>
                     </div>
                     <ul class="gnb-list">
-                        <li class="depth01">
-                            <a href="../introduce/IN0101.html">
-                                <h2>기관소개</h2>
+                        <li>
+                            <div class="depth01">
+                                <a href="../introduce/IN0101.html">
+                                    <h2>기관소개</h2>
+                                </a>
                                 <button type="button" class="toggle-btn">
-                                    <img class="on" src="./assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="./assets/images/icon_arrow_down.png" alt="">
+                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
+                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
                                 </button>
-                            </a>
+                            </div>
                             <ul class="depth02">
                                 <li><a href="../introduce/IN0101.html">디모데성경연구원</a></li>
                                 <li><a href="../introduce/IN0301.html">후원안내</a></li>
                             </ul>
                         </li>
-                        <li class="depth01">
-                            <a href="../seminar/SE0101.html">
-                                <h2>세미나</h2>
+                        <li>
+                            <div class="depth01">
+                                <a href="../seminar/SE0101.html">
+                                    <h2>세미나</h2>
+                                </a>
                                 <button type="button" class="toggle-btn">
-                                    <img class="on" src="./assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="./assets/images/icon_arrow_down.png" alt="">
+                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
+                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
                                 </button>
-                            </a>
+                            </div>
                             <ul class="depth02">
                                 <li><a href="../seminar/SE0101.html">세미나 신청</a></li>
                                 <li><a href="../seminar/SE0201.html">세미나 진행교회</a></li>
@@ -75,14 +86,18 @@
                                 <li><a href="../seminar/SE0401.html">세미나 후기</a></li>
                             </ul>
                         </li>
-                        <li class="depth01">
-                            <a href="../shop/SH0101.html">
-                                <h2>쇼핑몰</h2>
+                        <li>
+                            <div class="depth01">
+                                <a href="../shop/SH0101.html">
+                                    <h2>쇼핑몰</h2>
+                                </a>
+                                <!-- 
                                 <button type="button" class="toggle-btn">
-                                    <img class="on" src="./assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="./assets/images/icon_arrow_down.png" alt="">
+                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
+                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
                                 </button>
-                            </a>
+                                -->
+                            </div>
                             <!-- 
                             <ul class="depth02">
                                 <li><a href="../shop/SH0101.html">강사패키지</a></li>
@@ -93,28 +108,33 @@
                             </ul>
                              -->
                         </li>
-                        <li class="depth01">
-                            <a href="../archieve/AR0401.html">
-                                <h2 class="red">자료실</h2>
+                        <li>
+                            <div class="depth01">
+                                <a href="../archieve/AR0401.html">
+                                    <h2 class="red">자료실</h2>
+                                </a>
                                 <button type="button" class="toggle-btn">
-                                    <img class="on" src="./assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="./assets/images/icon_arrow_down.png" alt="">
+                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
+                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
                                 </button>
-                            </a>
+                            </div>
                             <ul class="depth02">
                                 <li><a href="../archieve/AR0201.html">사진게시판</a></li>
                                 <li class="red"><a href="../archieve/AR0301.html">칼럼</a></li>
                                 <li><a href="../archieve/AR0401.html">자료실</a></li>
                             </ul>
                         </li>
-                        <li class="depth01">
-                            <a href="../support/SU0101.html">
-                                <h2>고객센터</h2>
+                        <li>
+                            <div class="depth01">
+                                <a href="../support/SU0101.html">
+                                    <h2>고객센터</h2>
+                                </a>
                                 <button type="button" class="toggle-btn">
-                                    <img class="on" src="./assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="./assets/images/icon_arrow_down.png" alt="">
+                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
+                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
                                 </button>
-                            </a>
+
+                            </div>
                             <ul class="depth02">
                                 <li><a href="../support/SU0101.html">공지사항</a></li>
                                 <li><a href="../support/SU0201.html">FAQ</a></li>
@@ -127,7 +147,7 @@
         </nav>
     </header>
     <section class="page-sub">
-        <div class="visual-wrapper" style="background-image: url(../assets/images/archieve_visual.jpg);">
+        <div class="visual-wrapper" style="background-image: url(../assets/images/community_visual.jpg);">
             <p class="visual-text inner">성숙한 성도로 영향력 있는 지도자</p>
         </div>
         <div class="page-wrapper inner">
@@ -137,7 +157,13 @@
                     <dl class="word-title">
                         <dt>중요한 것을 첫 자리에 [제 756호]</dt>
                         <dd>
-                            <button type="button">디모데성경연구원</button>
+                            <div class="pos-re">
+                                <button type="button">디모데성경연구원</button>
+                                <div class="member-more">
+                                    <h6 class="member-name">디모데성경연구원</h6>
+                                    <a href="javascript:;">게시물 보기</a>
+                                </div>
+                            </div>
                             <div class="sub">
                                 <span class="da">2025-01-03 09:59:31</span>
                                 <span class="view">조회수 <em>18</em></span>
@@ -246,6 +272,69 @@
                         </ul>
                         <div class="word-btns">
                             <a href="javascript:;" class="button gray-radius">댓글등록</a>
+                        </div>
+                        <div class="mt-30">
+                            <h5 class="reply-count">댓글 [<em>5</em>]</h5>
+                            <ul class="reply-list">
+                                <li>
+                                    <div class="reply">
+                                        <dl class="reply-text">
+                                            <dt>
+                                                <button class="name" type="button">디모데성경연구원</button>
+                                                <span class="date">2020-02-19 17:24:39</span>
+                                            </dt>
+                                            <dd>
+                                                좋은 글입니다.
+                                            </dd>
+                                        </dl>
+                                        <ul class="reply-btns">
+                                            <li><a href="javascript:;" class="button gray-radius">삭제</a></li>
+                                            <li><a href="javascript:;" class="button gray-radius">수정</a></li>
+                                            <li><a href="javascript:;" class="button gray-radius">답글</a></li>
+                                        </ul>
+                                        <div class="write-nested">
+                                            <ul class="define-list full-style">
+                                                <li>
+                                                    <dl>
+                                                        <dt>작성자(*)</dt>
+                                                        <dd class="sub check">
+                                                            디모데성경연구원
+                                                            <div class="check-wrapper">
+                                                                <input type="checkbox" id="isSecret02">
+                                                                <label for="isSecret02">비밀글</label>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+                                                <li>
+                                                    <dl>
+                                                        <dt>내용(*)</dt>
+                                                        <dd><input type="text" class="custom"></dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            <ul class="reply-btns">
+                                                <li><a href="javascript:;" class="button gray-radius">답글 등록</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="reply nested icon">
+                                        <dl class="reply-text">
+                                            <dt>
+                                                <button class="name" type="button">디모데성경연구원</button>
+                                                <span class="date">2020-02-19 17:24:39</span>
+                                            </dt>
+                                            <dd>
+                                                답글입니다.
+                                            </dd>
+                                        </dl>
+                                        <ul class="reply-btns">
+                                            <li><a href="javascript:;" class="button gray-radius">삭제</a></li>
+                                            <li><a href="javascript:;" class="button gray-radius">수정</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <table class="word-move">
@@ -494,6 +583,33 @@
             <p class="copyright">Copyright © 2019 Worldteach All Rights Reserved.</p>
         </div>
     </footer>
+    <ul class="float-list">
+        <li>
+            <a class="float-icon" href="javascript:;">
+                <img src="../assets/images/icon_fix_coupon.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a class="float-icon" href="javascript:;">
+                <img src="../assets/images/icon_fix_cart.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a class="float-icon" href="javascript:;">
+                <img src="../assets/images/icon_fix_star.png" alt="">
+            </a>
+        </li>
+        <li>
+            <button type="button" id="scrollUp" class="float-icon">
+                <img src="../assets/images/icon_fix_up.png" alt="">
+            </button>
+        </li>
+        <li>
+            <button type="button" id="scrollDown" class="float-icon">
+                <img src="../assets/images/icon_fix_down.png" alt="">
+            </button>
+        </li>
+    </ul>
 </body>
 
 </html>

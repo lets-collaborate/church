@@ -127,17 +127,17 @@
     border-top: 1px solid var(--gray-neutral3);
 }
 
-.page-content .board-wrapper .product-list>li>a .product-image {
+.page-content .board-wrapper .product-list.column>li>a .product-image {
     width: 40%;
 }
 
-.page-content .board-wrapper .product-list>li>a .product-image>img {
+.page-content .board-wrapper .product-list.column>li>a .product-image>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.page-content .board-wrapper .product-list>li>a .product-text {
+.page-content .board-wrapper .product-list.column>li>a .product-text {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     display: flex;
@@ -146,12 +146,12 @@
     width: 60%;
 }
 
-.page-content .board-wrapper .product-list>li>a .product-text dl>dt {
+.page-content .board-wrapper .product-list.column>li>a .product-text dl>dt {
     font-size: var(--font-size-normal);
     font-weight: var(--bold);
 }
 
-.page-content .board-wrapper .product-list>li>a .product-text dl>dd {
+.page-content .board-wrapper .product-list.column>li>a .product-text dl>dd {
     margin-top: 1.5rem;
     color: var(--gray-dark2);
     line-height: 2.25rem;
@@ -162,13 +162,13 @@
     -webkit-box-orient: vertical;
 }
 
-.page-content .board-wrapper .product-list>li>a .product-text .text-sub {
+.page-content .board-wrapper .product-list.column>li>a .product-text .text-sub {
     margin-top: 1.5rem;
     text-align: right;
     color: var(--gray-mid1);
 }
 
-.page-content .board-wrapper .product-list>li>a .product-text .text-sub em+em {
+.page-content .board-wrapper .product-list.column>li>a .product-text .text-sub em+em {
     margin-left: 0.5rem;
 }
 
@@ -193,12 +193,12 @@
         flex-direction: column;
     }
 
-    .page-content .board-wrapper .product-list>li>a .product-image {
+    .page-content .board-wrapper .product-list.column>li>a .product-image {
         width: 100%;
         height: 20rem;
     }
 
-    .page-content .board-wrapper .product-list>li>a .product-text {
+    .page-content .board-wrapper .product-list.column>li>a .product-text {
         padding-top: 0;
         padding-bottom: 0;
         width: 100%;

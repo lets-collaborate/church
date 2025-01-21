@@ -65,7 +65,7 @@
     font-weight: var(--bold);
 }
 
-.page-main .tab-wrapper .tab-list>li.on>a {
+.page-main .tab-wrapper .tab-list>li.active>a {
     color: var(--primary)
 }
 
