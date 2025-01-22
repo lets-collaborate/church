@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/common/common.css">
     <link rel="stylesheet" href="./assets/css/depth/main.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/jquery-1.10.2.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/common.js"></script>
 </head>
 
 <body>
@@ -18,11 +20,6 @@
                 <ul>
                     <li><a href="./login/ST0101.html" class="icon user">회원가입</a></li>
                     <li><a href="./login/ST0201.html" class="icon power">로그인</a></li>
-                    <!-- 
-                        [SCRIPT] [공통]
-                        #showSearchBox 클릭시 search-wrapper에 class="active" 추가 
-                        #hideSearchBox 클릭시 search-wrapper에 class="active" 삭제
-                     -->
                     <li class="search-wrapper">
                         <div class="search-input">
                             <input type="text">
@@ -35,12 +32,8 @@
             </div>
         </div>
         <nav class="gnb-wrapper inner">
-            <!-- 
-                [SCRIPT] [공통]
-                #toggleMobileMenu 클릭시 gnb-content에 class="active" toggle 처리
-            -->
             <div class="gnb-content">
-                <button type="button" id="toggleMobileMenu" class="gnb-btn">&#9776;</button>
+                <button type="button" id="showMobileMenu" class="gnb-btn">&#9776;</button>
                 <h1><a href="./index.html">디모데성경연구원</a></h1>
                 <div class="list-wrapper">
                     <div class="user-wrapper">
@@ -49,7 +42,7 @@
                                 <img src="./assets/images/profile.gif" alt="">
                             </div>
                             <span>로그인을 해주세요</span>
-                            <button type="button" class="icon close">닫기</button>
+                            <button type="button" id="hideMobileMenu" class="icon close">닫기</button>
                         </div>
                         <div class="user-btns">
                             <a href="./login/ST0201.html">
@@ -66,10 +59,6 @@
                     </div>
                     <ul class="gnb-list">
                         <li>
-                            <!-- 
-                                [SCRIPT] [공통]
-                                .gnb-list .depth01에 있는 toggle-btn 클릭시 부모 li에 active toggle
-                            -->
                             <div class="depth01">
                                 <a href="./introduce/IN0101.html">
                                     <h2>기관소개</h2>
@@ -440,11 +429,6 @@
                 <img src="./assets/images/icon_fix_star.png" alt="">
             </a>
         </li>
-        <!-- 
-            [SCRIPT] [공통]
-            #scrollUp 클릭시 화면 가장위로 이동 
-            #scrollDown 클릭시 화면 가장 아래로 이동 
-        -->
         <li>
             <button type="button" id="scrollUp" class="float-icon">
                 <img src="./assets/images/icon_fix_up.png" alt="">

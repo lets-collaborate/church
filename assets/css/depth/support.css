@@ -95,14 +95,7 @@
 
 .page-content .board-wrapper .faq-list>li dl>dd {
     position: relative;
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 5s ease-out;
-}
-
-.page-content .board-wrapper .faq-list>li.active dl>dd {
-    max-height: 9999px;
-    transition: max-height 3s ease-in;
+    display: none;
 }
 
 .page-content .board-wrapper .faq-list>li dl>dd .answer {

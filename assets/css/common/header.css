@@ -252,18 +252,19 @@ header .top-wrapper ul>li.search-wrapper .icon.close {
     }
 
     .gnb-wrapper .gnb-content .list-wrapper {
-        display: none;
         position: fixed;
         width: 26rem;
         height: 100%;
-        left: 0;
+        left: -100%;
         top: 0;
         background-color: #fff;
         z-index: 11;
+        transition: left 1s;
     }
 
     .gnb-wrapper .gnb-content.active .list-wrapper {
-        display: block;
+        left: 0;
+        transition: left .5s;
     }
 
     .gnb-wrapper .gnb-content .list-wrapper .user-wrapper {
@@ -442,13 +443,7 @@ header .top-wrapper ul>li.search-wrapper .icon.close {
     .gnb-wrapper .gnb-content .list-wrapper .gnb-list>li .depth02 {
         position: static;
         border: none;
-        border-top: 1px solid var(--gray-neutral4);
-    }
-
-    .gnb-wrapper .gnb-content .list-wrapper .gnb-list>li.active .depth02 {
         margin-left: 1rem;
-        border-top: none;
-        display: block;
     }
 
     .gnb-wrapper .gnb-content .list-wrapper .gnb-list>li .depth02>li>a {

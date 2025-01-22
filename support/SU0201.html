@@ -7,6 +7,8 @@
     <title>FAQ | 디모데성경연구원</title>
     <link rel="stylesheet" href="../assets/css/common/common.css">
     <link rel="stylesheet" href="../assets/css/depth/support.css">
+    <script src="../assets/js/jquery-1.10.2.js"></script>
+    <script src="../assets/js/common.js"></script>
 </head>
 
 <body>
@@ -167,11 +169,7 @@
                         </div>
                     </div>
                     <ul class="faq-list">
-                        <!-- 
-                        [SCRIPT] [개별]
-                        .faq-list>li dl>dt button 클릭시 li에 active 토글처리
-                        -->
-                        <li class="active">
+                        <li>
                             <dl>
                                 <dt><button type="button">강사교육을 수료하면 무슨 혜택이 있는가?</button></dt>
                                 <dd>
@@ -724,6 +722,25 @@
             </button>
         </li>
     </ul>
+    <script>
+        $(document).ready(function () {
+            $(".faq-list > li dl > dt button").on("click", function () {
+                const $li = $(this).closest("li");
+                const isOpen = $li.hasClass("active")
+
+                $(".faq-list > li").removeClass("active");
+                $(".faq-list > li dl > dd").slideUp();
+
+                if (!isOpen) {
+                    $li.addClass("active");
+                    $li.find("dd").slideDown();
+                }
+            });
+        });
+
+
+
+    </script>
 </body>
 
 </html>
