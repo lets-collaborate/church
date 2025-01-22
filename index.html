@@ -179,7 +179,7 @@
                 <li><a href="javascript:;">공지사항</a></li>
             </ul>
             <div class="tab-content">
-                <ul>
+                <ul class="active">
                     <li>
                         <a href="javascript:;">
                             <div class="item-image">
@@ -253,6 +253,44 @@
                         </a>
                     </li>
                 </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="item-image">
+                                <img src="./assets/images/sample_notice01.jpg" alt="">
+                            </div>
+                            <dl class="item-info">
+                                <dd>공지사항, 세미나</dd>
+                                <dt>20.02.17`18 심플 구,신약 파노라마</dt>
+                                <dd>다모데성경연구원</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="item-image">
+                                <img src="./assets/images/sample_notice02.jpg" alt="">
+                            </div>
+                            <dl class="item-info">
+                                <dd>공지사항, 세미나</dd>
+                                <dt>20.02.17`18 심플 구,신약 파노라마</dt>
+                                <dd>다모데성경연구원</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="item-image">
+                                <img src="./assets/images/sample_notice02.jpg" alt="">
+                            </div>
+                            <dl class="item-info">
+                                <dd>공지사항, 세미나</dd>
+                                <dt>20.02.17`18 심플 구,신약 파노라마</dt>
+                                <dd>다모데성경연구원</dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="common-content">
@@ -298,7 +336,7 @@
                     </dd>
                 </dl>
                 <div class="link-wrapper">
-                    <a href="javascript:;" class="link-banner">
+                    <a href="https://worldteach.co.kr/timothybible/" target="_blank" class="link-banner">
                         <img src="./assets/images/bottom_banner.png" alt="">
                     </a>
                     <ul class="link-list">
@@ -441,7 +479,7 @@
         </li>
     </ul>
     <script>
-        var swiper = new Swiper(".visual-wrapper", {
+        const swiper = new Swiper(".visual-wrapper", {
             loop: true,
             slidesPerView: 'auto',
             centeredSlides: true,
@@ -449,6 +487,15 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+        });
+
+        $('.tab-wrapper .tab-list > li > a').on('click', function (e) {
+            e.preventDefault();
+
+            const $parentLi = $(this).parent();
+            const index = $parentLi.index();
+            $('.tab-wrapper .tab-content ul').eq(index).add($parentLi).addClass('active')
+                .siblings().removeClass('active');
         });
     </script>
 </body>
