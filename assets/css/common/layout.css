@@ -21,8 +21,18 @@
     overflow: hidden;
 }
 
+.mt-20 {
+    margin-top: 2rem;
+}
+
 .mt-30 {
     margin-top: 3rem;
+}
+
+.center-btns {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
 }
 
 /* 전체 페이지 float 메뉴 */
@@ -356,6 +366,7 @@ input.custom.wd-medium {
     padding-right: 1rem;
     box-sizing: border-box;
     border-radius: 0.3rem;
+    border: 1px solid var(--gray-mid2);
 }
 
 /* 전체 페이지 작성자 더보기 */
