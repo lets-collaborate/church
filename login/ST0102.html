@@ -187,7 +187,7 @@
                                     <dd>
                                         <div>
                                             <div class="input-box">
-                                                <input type="text" required/>
+                                                <input type="text" minlength="8" required/>
                                             </div>
                                             <p class="noti-txt">비밀번호는 8자리 이상 입력해 주세요</p>
                                         </div>
@@ -200,7 +200,7 @@
                                     <dd>
                                         <div>
                                             <div class="input-box">
-                                                <input type="text" required/>
+                                                <input type="text" minlength="8" required/>
                                             </div>
                                             <p class="noti-txt">비밀번호는 8자리 이상 입력해 주세요</p>
                                         </div>
@@ -328,7 +328,7 @@
                             </li>
                         </ul>
                         <div class="center-btns">
-                            <a href="../login/ST0103.html" class="button gray-radius">회원등록</a>
+                            <button type="submit" class="button gray-radius" onClick="location.href='./ST0103.html'">회원등록</button>
                         </div>
                     </div>
                     <!-- //join-content -->
@@ -521,36 +521,6 @@
             </button>
         </li>
     </ul>
-    <script>
-        // 모두 동의 체크박스
-        const agreeAllCheckbox = document.getElementById('user-agree-all');
-        const termsCheckbox = document.getElementById('user-ts');
-        const privacyCheckbox = document.getElementById('user-pp');
-
-        agreeAllCheckbox.addEventListener('change', function () {
-            const isChecked = agreeAllCheckbox.checked;
-            termsCheckbox.checked = isChecked;
-            privacyCheckbox.checked = isChecked;
-        });
-
-        function updateAgreeAllCheckbox() {
-            agreeAllCheckbox.checked = termsCheckbox.checked && privacyCheckbox.checked;
-        }
-
-        termsCheckbox.addEventListener('change', updateAgreeAllCheckbox);
-        privacyCheckbox.addEventListener('change', updateAgreeAllCheckbox);
-
-
-        // 모두 동의 체크박스 선택 하지 않았을 시 alert
-        document.querySelector('.button.gray-radius').addEventListener('click', function (event) {
-            const isAllAgreed = document.getElementById('user-agree-all').checked;
-    
-            if (!isAllAgreed) {
-                event.preventDefault();
-                alert("이용약관에 동의해 주세요");
-            }
-        });
-    </script>
 </body>
 
 </html>

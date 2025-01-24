@@ -341,7 +341,7 @@
                             </div>
                         </div>
                         <div class="center-btns">
-                            <a href="../login/ST0102.html" class="button gray-radius">회원가입</a>
+                            <button type="submit" class="button gray-radius">회원가입</button>
                         </div>
                     </div>
                     <!-- //join-content -->
@@ -539,28 +539,29 @@
         const agreeAllCheckbox = document.getElementById('user-agree-all');
         const termsCheckbox = document.getElementById('user-ts');
         const privacyCheckbox = document.getElementById('user-pp');
-
+        const signupButton = document.querySelector('.button.gray-radius'); // 버튼 선택
+    
         agreeAllCheckbox.addEventListener('change', function () {
             const isChecked = agreeAllCheckbox.checked;
             termsCheckbox.checked = isChecked;
             privacyCheckbox.checked = isChecked;
         });
-
+    
         function updateAgreeAllCheckbox() {
             agreeAllCheckbox.checked = termsCheckbox.checked && privacyCheckbox.checked;
         }
-
+    
         termsCheckbox.addEventListener('change', updateAgreeAllCheckbox);
         privacyCheckbox.addEventListener('change', updateAgreeAllCheckbox);
-
-
-        // 모두 동의 체크박스 선택 하지 않았을 시 alert
-        document.querySelector('.button.gray-radius').addEventListener('click', function (event) {
-            const isAllAgreed = document.getElementById('user-agree-all').checked;
     
+        // 모두 동의 체크박스 선택 하지 않았을 시 alert
+        signupButton.addEventListener('click', function (event) {
+            const isAllAgreed = agreeAllCheckbox.checked;
             if (!isAllAgreed) {
                 event.preventDefault();
                 alert("이용약관에 동의해 주세요");
+            } else {
+                window.location.href = "./ST0102.html";
             }
         });
     </script>
