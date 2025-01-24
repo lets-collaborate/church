@@ -155,12 +155,15 @@
         <div class="page-wrapper inner">
             <div class="page-content">
                 <h3>회원가입</h3>
-                <div class="join-wrapper agree">
-                    <div class="join-content">
+                <div class="agree-wrapper">
+                    <div class="agree-content">
                         <div>
                             <div class="title-wrap">
                                 <p class="title01">회원 가입약관</p>
-                                <label class="checkbox-label"><input name="user-agree-all" id="user-agree-all" type="checkbox">모두 동의</label>
+                                <div class="check-wrapper">
+                                    <input type="checkbox" id="user-agree-all" name="user-agree-all" />
+                                    <label for="user-agree-all">모두 동의</label>
+                                </div>
                             </div>
                             <div class="bdr-box">
                                 이용약관 및 개인정보 처리방침에 대한 내용을 읽고 "동의합니다"를 체크해 주셔야 회원에 가입 하실 수 있습니다
@@ -284,7 +287,10 @@
                                 "디모데성경연구원 쇼핑몰"과 이용자간에 제기된 전자거래 소송에는 한국법을 적용합니다.<br><br>
                             </div>
                             <div class="agree-box bdr-box">
-                                <label class="checkbox-label"><input name="user-ts" id="user-ts" type="checkbox">이용약관에 대한 내용을 읽고 이에 동의합니다</label>
+                                <div class="check-wrapper">
+                                    <input type="checkbox" id="user-ts" />
+                                    <label for="user-ts">이용약관에 대한 내용을 읽고 이에 동의합니다</label>
+                                </div>
                             </div>
                         </div>
                         <div>
@@ -337,16 +343,19 @@
                                 디모데성경연구원 이용 중 디모데성경연구원의 개인정보보호에 관련된 처리에 만족하지 못하실 경우에는 '개인정보침해신고센터' http://www.cyberprivacy.or.kr 에 서 그 처리를 의뢰할 수 있습니다.<br><br>
                             </div>
                             <div class="agree-box bdr-box">
-                                <label class="checkbox-label"><input name="user-pp" id="user-pp" type="checkbox">개인정보처리방침에 대한 내용을 읽고 이에 동의합니다</label>
+                                <div class="check-wrapper">
+                                    <input type="checkbox" id="user-pp" />
+                                    <label for="user-pp">개인정보처리방침에 대한 내용을 읽고 이에 동의합니다</label>
+                                </div>
                             </div>
                         </div>
                         <div class="center-btns">
                             <a href="./ST0102.html" class="button gray-radius">회원가입</a>
                         </div>
                     </div>
-                    <!-- //join-content -->
+                    <!-- //agree-content -->
                 </div>
-                <!-- //join-wrapper -->
+                <!-- //agree-wrapper -->
             </div>
         </div>
         <div class="common-content">

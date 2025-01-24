@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입 | 디모데성경연구원</title>
+    <title>1:1 문의 | 디모데성경연구원</title>
     <link rel="stylesheet" href="../assets/css/common/common.css">
-    <link rel="stylesheet" href="../assets/css/depth/login.css">
+    <link rel="stylesheet" href="../assets/css/depth/support.css">
     <script src="../assets/js/jquery-1.10.2.js"></script>
     <script src="../assets/js/common.js"></script>
 </head>
@@ -129,7 +129,7 @@
                         <li>
                             <div class="depth01">
                                 <a href="../support/SU0101.html">
-                                    <h2>고객센터</h2>
+                                    <h2 class="red">고객센터</h2>
                                 </a>
                                 <button type="button" class="toggle-btn">
                                     <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
@@ -140,7 +140,7 @@
                             <ul class="depth02">
                                 <li><a href="../support/SU0101.html">공지사항</a></li>
                                 <li><a href="../support/SU0201.html">FAQ</a></li>
-                                <li><a href="../support/SU0301.html">1:1 문의</a></li>
+                                <li class="red"><a href="../support/SU0301.html">1:1 문의</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -149,198 +149,90 @@
         </nav>
     </header>
     <section class="page-sub">
-        <div class="visual-wrapper" style="background-image: url(../assets/images/login_visual.jpg);">
+        <div class="visual-wrapper" style="background-image: url(../assets/images/support_visual.jpg);">
             <p class="visual-text inner">성숙한 성도로 영향력 있는 지도자</p>
         </div>
         <div class="page-wrapper inner">
             <div class="page-content">
-                <h3>회원가입</h3>
-                <div class="write-wrapper join-info">
-                    <ul class="define-list">
-                        <li>
-                            <dl>
-                                <dt>아이디(*)</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom" required/>
-                                            <a href="javascript:;" class="button gray-radius">중복확인</a>
-                                        </div>
-                                        <p class="noti-txt">아이디는 이메일 주소 양식으로 입력해주세요 예) aaa@aaa.com</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>성명(*)</dt>
-                                <dd>
-                                    <div class="input-box">
-                                        <input type="text" class="custom" required/>
-                                    </div>
-                                </dd>
-                            </dl>
-                        <li>
-                            <dl>
-                                <dt>비밀번호(*)</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="password" class="custom" minlength="8" required/>
-                                        </div>
-                                        <p class="noti-txt">비밀번호는 8자리 이상 입력해 주세요</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>비밀번호 확인(*)</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="password" class="custom" minlength="8" required/>
-                                        </div>
-                                        <p class="noti-txt">비밀번호는 8자리 이상 입력해 주세요</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>이메일주소</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom" />
-                                            <div class="check-wrapper">
-                                                <input type="checkbox" id="receive-mail" checked/>
-                                                <label for="receive-mail">수신동의</label>
-                                            </div>
-                                        </div>
-                                        <p class="noti-txt">예) aaa@aaa.com</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>생년월일</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom" />
-                                        </div>
-                                        <p class="noti-txt">예) 2019/01/01</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>휴대전화</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom" />
-                                            <div class="check-wrapper">
-                                                <input type="checkbox" id="receive-phone" checked/>
-                                                <label for="receive-phone">수신동의</label>
-                                            </div>
-                                        </div>
-                                        <p class="noti-txt">예) 010-1234-4567</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>일반전화</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom" />
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>교회</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom" />
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>직분</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <select class="custom">
-                                                <option value="담임목사">담임목사</option>
-                                                <option value="목사" selected="">목사</option>
-                                                <option value="강도사">강도사</option>
-                                                <option value="전도사">전도사</option>
-                                                <option value="선교사">선교사</option>
-                                                <option value="장로">장로</option>
-                                                <option value="권사">권사</option>
-                                                <option value="집사">집사</option>
-                                                <option value="학생">학생</option>
-                                                <option value="평신도">평신도</option>
-                                                <option value="사모">사모</option>
-                                                <option value="간사">간사</option>
-                                                <option value="기타">기타</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>지역</dt>
-                                <dd>
-                                    <div class="radio-box">
-                                        <div class="check-wrapper">
-                                            <input type="radio" id="user-state1" name="user-state" checked/>
-                                            <label for="user-state1">국내</label>
-                                        </div>
-                                        <div class="check-wrapper">
-                                            <input type="radio" id="user-state2" name="user-state" />
-                                            <label for="user-state2">해외</label>
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>주소</dt>
-                                <dd>
-                                    <div class="address">
-                                        <div class="input-box">
-                                            <input type="text" class="custom" placeholder="우편번호" readonly/>
-                                            <a href="javascript:;" class="button gray-radius">주소찾기</a>
-                                        </div>
-                                        <input type="text" class="custom" placeholder="주소" readonly/>
-                                        <input type="text" class="custom" placeholder="상세주소" />
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                    </ul>
-                    <div class="center-btns">
-                        <a href="javascript:;" class="button gray-radius">회원등록</a>
+                <h3 class="mo-only-text">1:1 문의</h3>
+                <div class="board-wrapper secret-password">
+                    <div class="bdr-box">
+                        <p>
+                            비밀글입니다<br>
+                            비밀번호를 입력해 주세요
+                        </p>
+                        <div class="input-box">
+                            <input type="password" class="custom" />
+                        </div>
+                        <div class="center-btns">
+                            <a href="javascript:;" class="button gray-radius">취소</a>
+                            <a href="javascript:;" class="button gray-radius">확인</a>
+                        </div>
                     </div>
                 </div>
-                <!-- //write-wrapper -->
+            </div>
+            <div class="page-sidebar">
+                <h4>고객센터</h4>
+                <ul class="menu-list">
+                    <li><a href="../support/SU0101.html">공지사항</a></li>
+                    <li><a href="../support/SU0201.html">FAQ</a></li>
+                    <li><a href="../support/SU0301.html">1:1 문의</a></li>
+                </ul>
+                <div class="login-wrapper">
+                    <div class="input-wrapper">
+                        <dl>
+                            <dt>아이디</dt>
+                            <dd><input type="text" class="custom" placeholder="ID"></dd>
+                        </dl>
+                        <dl>
+                            <dt>비밀번호</dt>
+                            <dd><input type="password" class="custom" placeholder="Password"></dd>
+                        </dl>
+                    </div>
+                    <div class="option-wrapper">
+                        <div class="check-wrapper">
+                            <input type="checkbox" id="isAutoLogin">
+                            <label for="isAutoLogin">자동로그인</label>
+                        </div>
+                        <a href="javascript:;" class="button gray-radius">로그인</a>
+                    </div>
+                    <div class="button-wrapper">
+                        <a href="javascript:;" class="button gray-radius">회원가입</a>
+                        <a href="javascript:;" class="button gray-radius">비밀번호 찾기</a>
+                    </div>
+                </div>
+                <div class="cart-wrapper">
+                    <h5>장바구니</h5>
+                    <ul class="cart-list">
+                        <li>
+                            <a href="javascript:;">
+                                <span class="item-image">
+                                    <img src="../assets/images/sample_shop03.png" alt="">
+                                </span>
+                                <dl>
+                                    <dt>[강사패키지] 성도답게 행하라</dt>
+                                    <dd class="red">
+                                        학생용 교재1권+다운로드자료(인도자 지침서 PDF파일+강의 음성 파일+강의 PPT 파일)
+                                    </dd>
+                                    <dd class="blue">
+                                        학생용 교재 추가구입(선택) / 1개 +5,000원
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 장바구니에 상품 없을경우 -->
+                    <!-- <p class="cart-empty">등록된 상품이 없습니다.</p> -->
+                    <div class="total-wrapper">
+                        <span>합계: 80,000원</span>
+                        <a href="javascript:;" class="button gray-radius">장바구니</a>
+                    </div>
+                </div>
+                <div class="banner-wrapper">
+                    <a href="javascript:;">
+                        <img src="../assets/images/side_banner.jpg" alt="">
+                    </a>
+                </div>
             </div>
         </div>
         <div class="common-content">

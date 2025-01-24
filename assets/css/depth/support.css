@@ -104,6 +104,36 @@
     border: 1px solid var(--gray-neutral3);
 }
 
+/* SU0302 1:1 문의 - 비밀글 */
+.page-content .board-wrapper.secret-password {
+    border: 1px solid var(--gray-mid2);
+    padding: 5rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.page-content .board-wrapper.secret-password .bdr-box {
+    max-width: 32rem;
+    border: 1px solid var(--gray-mid2);
+    border-radius: 0.3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+    box-sizing: border-box;
+}
+
+.page-content .board-wrapper.secret-password .bdr-box > p {
+    font-size: var(--font-size-normal);
+    font-weight: var(--bold);
+    margin-bottom: 1rem;
+}
+
+.page-content .board-wrapper.secret-password .bdr-box input.custom {
+    width: 20rem;
+}
+
+.page-content .board-wrapper.secret-password .bdr-box .center-btns {
+    margin-top: 2rem;
+}
 
 
 @media (max-width: 767px) {
@@ -142,3 +172,11 @@
         background-color: #999;
     }
 }
+
+@media (max-width: 480px) {
+    /* SU0302 1:1 문의 - 비밀글 */
+    .page-content .board-wrapper.secret-password .bdr-box input.custom {
+        width: 70%;
+    }
+}
+  

@@ -47,11 +47,11 @@
     z-index: 999;
 }
 
-.float-list > li + li {
+.float-list>li+li {
     border-top: 1px solid var(--gray-neutral3);
 }
 
-.float-list > li .float-icon {
+.float-list>li .float-icon {
     display: block;
     width: 4rem;
     height: 4rem;
@@ -59,7 +59,7 @@
     line-height: 4rem;
 }
 
-.float-list > li .float-icon > img {
+.float-list>li .float-icon>img {
     width: 2rem;
     height: 2rem;
     vertical-align: middle;
@@ -381,7 +381,7 @@ input.custom.wd-medium {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 0.25rem;
-    box-shadow: 0px 2px 4px -2px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 
 .member-more.active {
@@ -619,7 +619,7 @@ input.custom.wd-medium {
     font-size: 10px;
 }
 
-.board-wrapper .board-paging .paging-wrapper .paging-number>li.active a{
+.board-wrapper .board-paging .paging-wrapper .paging-number>li.active a {
     font-weight: var(--bold);
 }
 
@@ -1254,6 +1254,51 @@ input.custom.wd-medium {
     width: 100%;
 }
 
+/* 글쓰기 컨텐츠 */
+.write-wrapper .define-list dd > div {
+    width: 100%;
+}
+
+.write-wrapper .define-list .input-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.write-wrapper .define-list .radio-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.write-wrapper input.custom,
+.write-wrapper select.custom {
+    width: 20rem;
+}
+
+.write-wrapper .define-list .noti-txt {
+    font-size: var(--font-size-xs);
+    color: var(--gray-mid1);
+    margin-top: 0.4rem;
+}
+
+.write-wrapper .address {
+    width: 100%;
+}
+
+.write-wrapper .address>*:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.write-wrapper .address .input-box input.custom {
+    width: 7rem;
+}
+
+.write-wrapper .address input.custom {
+    width: 100%;
+}
+
+
 @media (max-width: 1278px) {
     .inner {
         padding-left: 1.5rem;
@@ -1340,7 +1385,7 @@ input.custom.wd-medium {
     .common-content .info-wrapper .link-wrapper .link-list>li {
         flex-basis: 100%;
     }
-    
+
     /* 전체 페이지 작성자 더보기 */
     .member-more {
         left: 0;
@@ -1501,5 +1546,4 @@ input.custom.wd-medium {
         display: flex;
         justify-content: flex-end;
     }
-
 }
