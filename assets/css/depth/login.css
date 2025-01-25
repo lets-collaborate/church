@@ -32,24 +32,11 @@
 }
 
 .page-content .agree-wrapper .agree-content .bdr-box {
-  border: 1px solid var(--gray-mid2);
-  padding: 0.6rem;
   font-size: var(--font-size-normal);
 }
 
 .page-content .agree-wrapper .agree-content .bdr-box.scroll-box {
   height: 20rem;
-  overflow-y: scroll;
-}
-
-.page-content .agree-wrapper .agree-content .bdr-box.scroll-box b {
-  font-weight: var(--bold);
-}
-
-.page-content .agree-wrapper .agree-content .agree-box {
-  background-color: var(--gray-neutral2);
-  border-top: 0;
-  font-size: var(--font-size-small);
 }
 
 /* ST0102 회원가입 - 정보입력 */

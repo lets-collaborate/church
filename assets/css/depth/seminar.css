@@ -162,6 +162,18 @@
     line-height: 3rem;
 }
 
+/* SE0301 강사요청 */
+.page-content .write-wrapper.reg-lecturer .smart-editor {
+    min-height: 30rem;
+}
+
+.page-content .write-wrapper.reg-lecturer .agree-wrapper .agree-content > div {
+    margin-top: 1rem;
+  }
+
+.page-content .write-wrapper.reg-lecturer .agree-wrapper .agree-content .bdr-box.scroll-box {
+    height: 15rem;
+}
 
 
 @media (max-width: 767px) {
@@ -206,5 +218,10 @@
 
     .page-content .board-wrapper .board-list.photo tr .item-text dd.info .bar:nth-child(2) {
         display: none;
+    }
+
+    /* SE0301 강사요청 */
+    .page-content .write-wrapper.reg-lecturer .input-box input.custom {
+        width: 100%;
     }
 }

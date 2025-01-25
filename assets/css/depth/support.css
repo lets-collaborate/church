@@ -178,5 +178,10 @@
     .page-content .board-wrapper.secret-password .bdr-box input.custom {
         width: 70%;
     }
+
+    /* SU0401 1:1 문의 - 글쓰기 */
+    .page-content .write-wrapper .input-box input.custom {
+        width: 100%;
+    }
 }
   
