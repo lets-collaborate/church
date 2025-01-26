@@ -224,4 +224,9 @@
     .page-content .write-wrapper.reg-lecturer .input-box input.custom {
         width: 100%;
     }
+
+    /* SE0403 세미나 후기 - 글쓰기/답변 */
+    .page-content .write-wrapper.review .input-box input.custom {
+        width: 100%;
+    }
 }

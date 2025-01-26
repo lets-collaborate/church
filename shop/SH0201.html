@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>세미나 후기 | 디모데성경연구원</title>
+    <title>장바구니 | 디모데성경연구원</title>
     <link rel="stylesheet" href="../assets/css/common/common.css">
-    <link rel="stylesheet" href="../assets/css/depth/seminar.css">
+    <link rel="stylesheet" href="../assets/css/depth/shop.css">
     <script src="../assets/js/jquery-1.10.2.js"></script>
     <script src="../assets/js/common.js"></script>
 </head>
@@ -85,13 +85,13 @@
                                 <li><a href="../seminar/SE0101.html">세미나 신청</a></li>
                                 <li><a href="../seminar/SE0201.html">세미나 진행교회</a></li>
                                 <li><a href="../seminar/SE0301.html">강사요청</a></li>
-                                <li class="red"><a href="../seminar/SE0401.html">세미나 후기</a></li>
+                                <li><a href="../seminar/SE0401.html">세미나 후기</a></li>
                             </ul>
                         </li>
                         <li>
                             <div class="depth01">
                                 <a href="../shop/SH0101.html">
-                                    <h2>쇼핑몰</h2>
+                                    <h2 class="red">쇼핑몰</h2>
                                 </a>
                                 <!-- 
                                 <button type="button" class="toggle-btn">
@@ -129,7 +129,7 @@
                         <li>
                             <div class="depth01">
                                 <a href="../support/SU0101.html">
-                                    <h2 class="red">고객센터</h2>
+                                    <h2>고객센터</h2>
                                 </a>
                                 <button type="button" class="toggle-btn">
                                     <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
@@ -149,154 +149,82 @@
         </nav>
     </header>
     <section class="page-sub">
-        <div class="visual-wrapper" style="background-image: url(../assets/images/seminar_visual.jpg);">
+        <div class="visual-wrapper" style="background-image: url(../assets/images/login_visual.jpg);">
             <p class="visual-text inner">성숙한 성도로 영향력 있는 지도자</p>
         </div>
         <div class="page-wrapper inner">
             <div class="page-content">
-                <h3 class="mo-only-text">세미나 후기</h3>
-                <div class="write-wrapper review">
-                    <div class="check-wrapper secret-write">
-                        <input type="checkbox" id="secret-write" />
-                        <label for="secret-write">비밀글</label>
-                    </div>
-                    <ul class="define-list">
-                        <li>
-                            <dl>
-                                <dt>작성자(*)</dt>
-                                <dd>
-                                    <div class="input-box">
-                                        <input type="text" class="custom" required/>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>비밀번호(*)</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="password" class="custom" required/>
+                <h3>장바구니</h3>
+                <ul class="order-process">
+                    <li class="on">01 장바구니</li>
+                    <li>02 주문/결제</li>
+                    <li>03 주문완료</li>
+                </ul>
+                <div class="order-wrapper">
+                    <div class="order-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" id="od-check-all" /></th>
+                                    <th>상품/옵션정보</th>
+                                    <th>수량</th>
+                                    <th>상품금액</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" id="od-check01" /></td>
+                                    <td class="item-info">
+                                        <a href="./SH0102.html" class="item-image">
+                                            <img src="../assets/images/sample_shop03.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="./SH0102.html" class="product-title">[강사패키지] 성도답게 행하라</a>
+                                            <p class="red">학생용 교재1권+다운로드자료(인도자 지침서 PDF파일+강의 음성 파일+강의 PPT 파일) / 2개</p>
                                         </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>제목(*)</dt>
-                                <dd>
-                                    <div class="input-box">
-                                        <input type="text" class="custom wd-full" required/>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>별점선택</dt>
-                                <dd>
-                                    <div class="rating-group">
-                                        <label aria-label="0" class="rating-label" for="rating-0"></label>
-                                        <input class="rating-input" checked name="rating" id="rating-0" value="0" type="radio">
-                                        <label aria-label="0.5" class="rating-label rating-label-half" for="rating-05"><i class="rating-icon fa fa-star-half"></i></label>
-                                        <input class="rating-input" name="rating" id="rating-05" value="0.5" type="radio">
-                                        <label aria-label="1" class="rating-label" for="rating-10"><i class="rating-icon fa fa-star"></i></label>
-                                        <input class="rating-input" name="rating" id="rating-10" value="1" type="radio">
-                                        <label aria-label="1.5" class="rating-label rating-label-half" for="rating-15"><i class="rating-icon fa fa-star-half"></i></label>
-                                        <input class="rating-input" name="rating" id="rating-15" value="1.5" type="radio">
-                                        <label aria-label="2" class="rating-label" for="rating-20"><i class="rating-icon fa fa-star"></i></label>
-                                        <input class="rating-input" name="rating" id="rating-20" value="2" type="radio">
-                                        <label aria-label="2.5" class="rating-label rating-label-half" for="rating-25"><i class="rating-icon fa fa-star-half"></i></label>
-                                        <input class="rating-input" name="rating" id="rating-25" value="2.5" type="radio" >
-                                        <label aria-label="3" class="rating-label" for="rating-30"><i class="rating-icon fa fa-star"></i></label>
-                                        <input class="rating-input" name="rating" id="rating-30" value="3" type="radio">
-                                        <label aria-label="3.5" class="rating-label rating-label-half" for="rating-35"><i class="rating-icon fa fa-star-half"></i></label>
-                                        <input class="rating-input" name="rating" id="rating-35" value="3.5" type="radio">
-                                        <label aria-label="4" class="rating-label" for="rating-40"><i class="rating-icon fa fa-star"></i></label>
-                                        <input class="rating-input" name="rating" id="rating-40" value="4" type="radio">
-                                        <label aria-label="4.5" class="rating-label rating-label-half" for="rating-45"><i class="rating-icon fa fa-star-half"></i></label>
-                                        <input class="rating-input" name="rating" id="rating-45" value="4.5" type="radio">
-                                        <label aria-label="5" class="rating-label" for="rating-50"><i class="rating-icon fa fa-star"></i></label>
-                                        <input class="rating-input" name="rating" id="rating-50" value="5" type="radio">
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                    </ul>
-
-                    <div class="smart-editor">
-                        <!-- 스마트에디터 -->
-                    </div>
-
-                    <ul class="define-list">
-                        <li>
-                            <dl>
-                                <dt>태그</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom wd-full" />
+                                    </td>
+                                    <td class="item-count"><input class="custom" maxlength="3" value="1" type="text" readonly="" /></td>
+                                    <td class="item-price">80,000원</td>
+                                    <td class="item-btns">
+                                        <a href="javascript:;" class="button gray-radius">주문</a>
+                                        <a href="javascript:;" class="button gray-radius">삭제</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="od-check01" /></td>
+                                    <td class="item-info">
+                                        <a href="./SH0102.html" class="item-image">
+                                            <img src="../assets/images/sample_shop03.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="./SH0102.html" class="product-title">[강사패키지] 성도답게 행하라</a>
+                                            <p class="red">학생용 교재1권+다운로드자료(인도자 지침서 PDF파일+강의 음성 파일+강의 PPT 파일) / 2개</p>
                                         </div>
-                                        <p class="noti-txt">(태그는 쉼표로 구분해서 입력해 주세요)</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>파일1</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="file" />
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>파일2</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="file" />
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>자동등록방지</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom wd-small" placeholder="482005" readonly="">
-                                            <input type="text" class="custom wd-small">
-                                        </div>
-                                        <p class="noti-txt">(자동등록방지 숫자를 입력해 주세요)</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                    </ul>
-                    <div class="write-btns between">
-                        <a href="javascript:history.back()" class="button gray-radius">목록</a>
-                        <a href="javascript:;" class="button gray-radius">확인</a>
+                                    </td>
+                                    <td class="item-count"><input class="custom" maxlength="3" value="1" type="text" readonly="" /></td>
+                                    <td class="item-price">80,000원</td>
+                                    <td class="item-btns">
+                                        <a href="javascript:;" class="button gray-radius">주문</a>
+                                        <a href="javascript:;" class="button gray-radius">삭제</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <!-- //write-wrapper -->
+                <!-- //order-wrapper -->
             </div>
             <div class="page-sidebar">
-                <h4>고객센터</h4>
+                <h4>나의계정</h4>
+                <!-- 
                 <ul class="menu-list">
-                    <li><a href="../support/SU0101.html">공지사항</a></li>
-                    <li><a href="../support/SU0201.html">FAQ</a></li>
-                    <li><a href="../support/SU0301.html">1:1 문의</a></li>
+                    <li><a href="javascript:;">강사 패키지</a></li>
+                    <li><a href="javascript:;">학생용 교재</a></li>
+                    <li><a href="javascript:;">단행본/도서</a></li>
+                    <li><a href="javascript:;">기타</a></li>
                 </ul>
+                 -->
                 <div class="login-wrapper">
                     <div class="input-wrapper">
                         <dl>
@@ -343,7 +271,7 @@
                     <!-- 장바구니에 상품 없을경우 -->
                     <!-- <p class="cart-empty">등록된 상품이 없습니다.</p> -->
                     <div class="total-wrapper">
-                        <span>합계: 80,000원</span>
+                        <span>합계: <em>80,000</em>원</span>
                         <a href="javascript:;" class="button gray-radius">장바구니</a>
                     </div>
                 </div>
