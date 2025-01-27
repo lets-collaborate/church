@@ -1444,7 +1444,7 @@ input.custom.wd-medium {
 
 /* 주문 게시판 */
 .order-wrapper .order-list {
-    border-top: 1px solid var(--gray-neutral3);
+    border-top: 2px solid var(--gray-neutral3);
 }
 
 .order-wrapper .order-list table {
@@ -1452,7 +1452,7 @@ input.custom.wd-medium {
 }
 
 .order-wrapper .order-list tr {
-    border-top: 1px solid var(--gray-neutral5);
+    border-bottom: 1px solid var(--gray-neutral5);
 }
 
 .order-wrapper .order-list th {
@@ -1470,6 +1470,10 @@ input.custom.wd-medium {
     color: var(--gray-dark2);
     box-sizing: border-box;
     vertical-align: middle;
+}
+
+.order-wrapper .order-list td:not(.item-info) {
+    text-align: center;
 }
 
 .order-wrapper .order-list input[type=checkbox] {
@@ -1521,10 +1525,6 @@ input.custom.wd-medium {
     color: var(--gray-dark3);
 }
 
-.order-wrapper .order-list .item-btns {
-    text-align: center;
-}
-
 .order-wrapper .order-list .item-btns > * {
     background: #fff;
     padding-left: 1.2rem;
@@ -1535,6 +1535,40 @@ input.custom.wd-medium {
     margin-top: 0.5rem;
 }
 
+.order-wrapper .price-list {
+    display: flex;
+    border: 1px solid var(--gray-neutral5);
+    background: var(--gray-neutral2);
+    margin-top: 1rem;
+}
+
+.order-wrapper .price-list > dl {
+    width: calc(100% / 3);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.order-wrapper .price-list > dl + dl {
+    border-left: 1px solid var(--gray-neutral5);
+}
+
+.order-wrapper .price-list > dl > dd {
+    font-weight: var(--bold);
+    text-align: right;
+}
+
+.order-wrapper .order-btns {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.order-wrapper .order-btns.between {
+    justify-content: space-between;
+}
+
+.order-wrapper .order-btns.end {
+    justify-content: flex-end;
+}
 
 
 @media (max-width: 1278px) {

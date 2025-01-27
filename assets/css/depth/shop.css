@@ -135,6 +135,16 @@
     width: 100%;
 }
 
+/* SH0202 위시리스트 */
+.page-content .board-wrapper.wishlist .board-filter {
+    border-bottom: 0;
+}
+
+.page-content .board-wrapper.wishlist .board-paging {
+    border-top: 0;
+}
+
+
 @media (max-width: 1199px) {
     .page-content .board-wrapper.shop .product-list>li {
         width: calc(33.33% - 1rem);
