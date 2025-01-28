@@ -21,6 +21,10 @@
     overflow: hidden;
 }
 
+.word-all {
+    word-break: break-all;
+}
+
 .mt-20 {
     margin-top: 2rem;
 }
@@ -445,6 +449,11 @@ input.custom.wd-medium {
     overflow-x: auto;
     flex-grow: 1;
 }
+
+.page-wrapper .page-content.overflow-vi {
+    overflow: visible;
+}
+
 
 /* 서브페이지 컨텐츠 영역 내 제목 */
 .page-wrapper .page-content h3 {

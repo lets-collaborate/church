@@ -1,0 +1,108 @@
+/* IN0101 기관소개 - 다모데성경연구원 */
+.page-content .timothy-intro-wrap {
+  font-size: var(--font-size-basic);
+  color: var(--gray-dark2);
+  line-height: 2.4rem;
+}
+
+.page-content .timothy-intro-wrap > div + div {
+  margin-top: 4rem;
+}
+
+.page-content .timothy-intro-wrap .content-title {
+  background: url(../../images/icon_title1.png) no-repeat left center;
+  background-size: 1.3rem 1.3rem;
+  padding-left: 2rem;
+  font-size: var(--font-size-xlarge);
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.page-content .timothy-intro-wrap .content-title strong {
+  font-family: 'arial black', sans-serif;
+  letter-spacing: -0.08rem;
+}
+
+.page-content .timothy-intro-wrap .found .txt-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-content .timothy-intro-wrap .found .img {
+  width: 34%;
+  height: fit-content;
+  flex-shrink: 0;
+  margin-left: 3rem;
+}
+
+.page-content .timothy-intro-wrap .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-top: 3.5rem;
+}
+   
+.page-content .timothy-intro-wrap .video-container iframe,
+.page-content .timothy-intro-wrap .video-container object,
+.page-content .timothy-intro-wrap .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page-content .timothy-intro-wrap .bekenntnis {
+  margin-top: 6rem;
+}
+
+.page-content .timothy-intro-wrap .vision {
+  margin-top: 6rem;
+}
+  
+.page-content .timothy-intro-wrap .vision-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.page-content .timothy-intro-wrap .vision-list li {
+  width: calc((100% - 3rem) / 3);
+  padding: 2rem;
+  box-sizing: border-box;
+  border: 1px solid var(--gray-neutral3);
+  text-align: center;
+}
+
+.page-content .timothy-intro-wrap .vision-list li .icon {
+  width: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-content .timothy-intro-wrap .vision-list li span {
+  display: block;
+  color: var(--gray-dark1);
+  font-size: var(--font-size-large);
+  font-weight: var(--bold);
+  margin-bottom: 1rem;
+}
+
+.page-content .timothy-intro-wrap .ministry-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-content .timothy-intro-wrap .ministry-list li {
+  width: calc((100% - 6rem) / 5);
+  padding: 2rem;
+  box-sizing: border-box;
+  border: 1px solid var(--gray-neutral3);
+  text-align: center;
+  font-size: var(--font-size-normal);
+}
+
+.page-content .timothy-intro-wrap .ministry-list li .icon {
+  width: 8rem;
+  margin-bottom: 1.5rem;
+}
