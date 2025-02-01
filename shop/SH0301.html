@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>장바구니 | 디모데성경연구원</title>
+    <title>주문/결제 | 디모데성경연구원</title>
     <link rel="stylesheet" href="../assets/css/common/common.css">
     <link rel="stylesheet" href="../assets/css/depth/shop.css">
     <script src="../assets/js/jquery-1.10.2.js"></script>
@@ -154,31 +154,26 @@
         </div>
         <div class="page-wrapper inner">
             <div class="page-content">
-                <h3>장바구니</h3>
+                <h3>주문/결제</h3>
                 <ul class="order-process">
-                    <li class="on">01 장바구니</li>
-                    <li>02 주문/결제</li>
+                    <li>01 장바구니</li>
+                    <li class="on">02 주문/결제</li>
                     <li>03 주문완료</li>
                 </ul>
                 <div class="order-wrapper">
+                    <strong>주문상품 확인</strong>
                     <div class="order-list">
                         <table>
                             <thead>
                                 <tr>
-                                    <th style="width: 5rem;"><input type="checkbox" id="od-check-all" checked/></th>
                                     <th>상품/옵션정보</th>
-                                    <th style="width: 8rem;">수량</th>
-                                    <th style="width: 11rem;">상품금액</th>
-                                    <th style="width: 6rem;"></th>
+                                    <th style="width: 5rem;">수량</th>
+                                    <th style="width: 12rem;">상품금액</th>
+                                    <th style="width: 12rem;">판매자</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- 장바구니에 상품 없을 시 -->
-                                <!-- <tr>
-                                    <td colspan="5">등록된 상품이 없습니다</td>
-                                </tr> -->
                                 <tr>
-                                    <td><input type="checkbox" id="od-check01" checked/></td>
                                     <td class="item-info">
                                         <a href="./SH0102.html" class="item-image">
                                             <img src="../assets/images/sample_shop03.png" alt="">
@@ -188,15 +183,11 @@
                                             <p class="red">학생용 교재1권+다운로드자료(인도자 지침서 PDF파일+강의 음성 파일+강의 PPT 파일) / 2개</p>
                                         </div>
                                     </td>
-                                    <td class="item-count"><input class="custom" maxlength="3" value="1" type="text" readonly="" /></td>
+                                    <td class="item-count">1</td>
                                     <td class="item-price">80,000원</td>
-                                    <td class="item-btns">
-                                        <a href="javascript:;" class="button gray-radius">주문</a>
-                                        <a href="javascript:;" class="button gray-radius">삭제</a>
-                                    </td>
+                                    <td class="item-seller">디모데성경연구원</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" id="od-check02" checked/></td>
                                     <td class="item-info">
                                         <a href="./SH0102.html" class="item-image">
                                             <img src="../assets/images/sample_shop03.png" alt="">
@@ -206,12 +197,9 @@
                                             <p class="red">학생용 교재1권+다운로드자료(인도자 지침서 PDF파일+강의 음성 파일+강의 PPT 파일) / 2개</p>
                                         </div>
                                     </td>
-                                    <td class="item-count"><input class="custom" maxlength="3" value="1" type="text" readonly="" /></td>
+                                    <td class="item-count">1</td>
                                     <td class="item-price">80,000원</td>
-                                    <td class="item-btns">
-                                        <a href="javascript:;" class="button gray-radius">주문</a>
-                                        <a href="javascript:;" class="button gray-radius">삭제</a>
-                                    </td>
+                                    <td class="item-seller">디모데성경연구원</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -227,23 +215,97 @@
                             <dd>- 0원</dd>
                         </dl>
                         <dl>
+                            <dt>배송비</dt>
+                            <dd>+ 0원</dd>
+                        </dl>
+                        <dl>
                             <dt>결제금액</dt>
                             <dd class="red">160,000원</dd>
                         </dl>
                     </div>
                     <!-- //price-list -->
-                    <div class="order-btns between">
-                        <div>
-                            <!-- 해당 버튼 미사용 시 a태그만 삭제 -->
-                            <a href="javascript:;" class="button gray-radius">설정</a> 
-                        </div>
-                        <div>
-                            <a href="./SH0301.html" class="button gray-radius">선택상품주문</a>
-                            <a href="./SH0301.html" class="button gray-radius">전체주문</a>
-                        </div>
-                    </div>
                 </div>
                 <!-- //order-wrapper -->
+                <div class="write-wrapper">
+                    <div class="check-wrapper">
+                        <input type="checkbox" id="order-info" checked/>
+                        <label for="order-info">주문자 정보 수정</label>
+                    </div>
+                    <ul class="define-list">
+                        <li>
+                            <dl>
+                                <dt>주문자 이름(*)</dt>
+                                <dd>
+                                    <div>
+                                        <div class="input-box">
+                                            <input type="text" class="custom" value="" required/>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>이메일(*)</dt>
+                                <dd>
+                                    <div class="input-box">
+                                        <input type="text" class="custom" value="" required/>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>연락처(*)</dt>
+                                <dd>
+                                    <div class="input-box phone-input">
+                                        <select class="custom">
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                        <span>-</span>
+                                        <input type="text" class="custom" value="" required/>
+                                        <span>-</span>
+                                        <input type="text" class="custom" value="" required/>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt class="red">배송요청사항</dt>
+                                <dd>
+                                    <div>
+                                        <div class="input-box">
+                                            <input type="text" class="custom wd-full" />
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>
+                                    <div class="address">
+                                        <div class="input-box">
+                                            <input type="text" class="custom" placeholder="우편번호" readonly/>
+                                            <a href="javascript:;" class="button gray-radius">주소찾기</a>
+                                        </div>
+                                        <input type="text" class="custom" placeholder="주소" readonly/>
+                                        <input type="text" class="custom" placeholder="상세주소" />
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <!-- //write-wrapper -->
             </div>
             <div class="page-sidebar">
                 <h4>나의계정</h4>

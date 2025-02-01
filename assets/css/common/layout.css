@@ -1552,7 +1552,7 @@ input.custom.wd-medium {
 }
 
 .order-wrapper .price-list > dl {
-    width: calc(100% / 3);
+    flex: 1;
     padding: 1rem;
     box-sizing: border-box;
 }
