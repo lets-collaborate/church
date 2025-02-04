@@ -144,6 +144,109 @@
     border-top: 0;
 }
 
+/* SH0301 결제 - 주문/결제 */
+.page-content.orderpay .write-wrapper > div {
+    margin-top: 2.5rem;
+}
+
+.page-content.orderpay .write-wrapper .define-list {
+    width: 100%;
+    height: fit-content;
+    margin-top: 0.3rem;
+}
+
+.page-content.orderpay .write-wrapper .define-list > li dl > dt {
+    width: 10.5rem;
+}
+
+.write-wrapper .point {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.write-wrapper .point .input-box input.custom {
+    width: 8rem;
+    text-align: right;
+}
+
+.page-content.orderpay .write-wrapper > div.pay-info .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-content.orderpay .billing-pay {
+    width: 34%;
+    border: 2px solid var(--gray-neutral4);
+    padding: 1.2rem 1.4rem;
+    box-sizing: border-box;
+    margin-left: 2rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.page-content.orderpay .billing-pay ul li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-neutral3);
+    padding: 0.7rem 0.5rem;
+    box-sizing: border-box;
+}
+
+.page-content.orderpay .billing-pay ul li:nth-child(1),
+.page-content.orderpay .billing-pay ul li:nth-child(2) {
+    border-style: dashed;
+}
+
+.page-content.orderpay .billing-pay ul li .total {
+    color: var(--red);
+    font-weight: var(--bold);
+    font-size: var(--font-size-basic);
+}
+
+.page-content.orderpay .billing-pay .check-wrapper.all-check {
+    align-items: flex-start;
+    padding: 1rem 0 0.5rem;
+    box-sizing: border-box;
+    border-bottom: 1px dashed var(--gray-neutral3);
+}
+
+.page-content.orderpay .billing-pay .check-wrapper.all-check > input {
+    margin-top: 0.2rem;
+}
+
+.page-content.orderpay .billing-pay .check-wrapper.all-check > label {
+    color: var(--gray-dark3);
+    line-height: 1.8rem;
+    letter-spacing: -0.1rem;
+    word-break: break-all;
+}
+
+.page-content.orderpay .billing-pay .terms {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-xs);
+    color: var(--gray-dark3);
+    letter-spacing: -0.1rem;
+    margin-top: 0.7rem;
+    padding-left: 0.6rem;
+}
+
+.page-content.orderpay .billing-pay .pay-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.6rem;
+    background-color: var(--red);
+    color: #fff;
+    font-weight: var(--bold);
+    font-size: var(--font-size-basic);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    margin-top: 2rem;
+}
+
 
 @media (max-width: 1199px) {
     .page-content .board-wrapper.shop .product-list>li {

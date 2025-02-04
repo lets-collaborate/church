@@ -153,7 +153,7 @@
             <p class="visual-text inner">성숙한 성도로 영향력 있는 지도자</p>
         </div>
         <div class="page-wrapper inner">
-            <div class="page-content">
+            <div class="page-content orderpay">
                 <h3>주문/결제</h3>
                 <ul class="order-process">
                     <li>01 장바구니</li>
@@ -227,82 +227,261 @@
                 </div>
                 <!-- //order-wrapper -->
                 <div class="write-wrapper">
-                    <div class="check-wrapper">
-                        <input type="checkbox" id="order-info" checked/>
-                        <label for="order-info">주문자 정보 수정</label>
-                    </div>
-                    <ul class="define-list">
-                        <li>
-                            <dl>
-                                <dt>주문자 이름(*)</dt>
-                                <dd>
-                                    <div>
+                    <!-- 주문자 정보 -->
+                    <div>
+                        <div class="check-wrapper">
+                            <input type="checkbox" id="order-info" checked/>
+                            <label for="order-info">주문자 정보 수정</label>
+                        </div>
+                        <ul class="define-list">
+                            <li>
+                                <dl>
+                                    <dt>주문자 이름(*)</dt>
+                                    <dd>
+                                        <div>
+                                            <div class="input-box">
+                                                <input type="text" class="custom" value="" required/>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>이메일(*)</dt>
+                                    <dd>
                                         <div class="input-box">
                                             <input type="text" class="custom" value="" required/>
                                         </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>이메일(*)</dt>
-                                <dd>
-                                    <div class="input-box">
-                                        <input type="text" class="custom" value="" required/>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>연락처(*)</dt>
-                                <dd>
-                                    <div class="input-box phone-input">
-                                        <select class="custom">
-                                            <option value="010">010</option>
-                                            <option value="011">011</option>
-                                            <option value="016">016</option>
-                                            <option value="017">017</option>
-                                            <option value="018">018</option>
-                                            <option value="019">019</option>
-                                        </select>
-                                        <span>-</span>
-                                        <input type="text" class="custom" value="" required/>
-                                        <span>-</span>
-                                        <input type="text" class="custom" value="" required/>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt class="red">배송요청사항</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom wd-full" />
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>연락처(*)</dt>
+                                    <dd>
+                                        <div class="input-box phone-input">
+                                            <select class="custom">
+                                                <option value="010">010</option>
+                                                <option value="011">011</option>
+                                                <option value="016">016</option>
+                                                <option value="017">017</option>
+                                                <option value="018">018</option>
+                                                <option value="019">019</option>
+                                            </select>
+                                            <span>-</span>
+                                            <input type="text" class="custom" value="" required/>
+                                            <span>-</span>
+                                            <input type="text" class="custom" value="" required/>
                                         </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>주소</dt>
-                                <dd>
-                                    <div class="address">
-                                        <div class="input-box">
-                                            <input type="text" class="custom" placeholder="우편번호" readonly/>
-                                            <a href="javascript:;" class="button gray-radius">주소찾기</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt class="red">배송요청사항</dt>
+                                    <dd>
+                                        <div>
+                                            <div class="input-box">
+                                                <input type="text" class="custom wd-full" />
+                                            </div>
                                         </div>
-                                        <input type="text" class="custom" placeholder="주소" readonly/>
-                                        <input type="text" class="custom" placeholder="상세주소" />
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd>
+                                        <div class="address">
+                                            <div class="input-box">
+                                                <input type="text" class="custom" placeholder="우편번호" readonly/>
+                                                <a href="javascript:;" class="button gray-radius">주소찾기</a>
+                                            </div>
+                                            <input type="text" class="custom" placeholder="주소" readonly/>
+                                            <input type="text" class="custom" placeholder="상세주소" />
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //주문자 정보 -->
+
+                    <!-- 배송지 정보 입력 -->
+                    <div>
+                        <p class="bold">배송지 정보 입력</p>
+                        <ul class="define-list">
+                            <li>
+                                <dl>
+                                    <dt>배송지 선택</dt>
+                                    <dd>
+                                        <div class="check-wrapper">
+                                            <input type="checkbox" id="info-same" checked/>
+                                            <label for="info-same">주문자 정보와 동일</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>받으시는 분(*)</dt>
+                                    <dd>
+                                        <div>
+                                            <div class="input-box">
+                                                <input type="text" class="custom" value="" required/>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>연락처(*)</dt>
+                                    <dd>
+                                        <div class="input-box phone-input">
+                                            <select class="custom">
+                                                <option value="010">010</option>
+                                                <option value="011">011</option>
+                                                <option value="016">016</option>
+                                                <option value="017">017</option>
+                                                <option value="018">018</option>
+                                                <option value="019">019</option>
+                                            </select>
+                                            <span>-</span>
+                                            <input type="text" class="custom" value="" required/>
+                                            <span>-</span>
+                                            <input type="text" class="custom" value="" required/>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd>
+                                        <div class="address">
+                                            <div class="input-box">
+                                                <input type="text" class="custom" placeholder="우편번호" readonly/>
+                                                <a href="javascript:;" class="button gray-radius">주소찾기</a>
+                                            </div>
+                                            <input type="text" class="custom" placeholder="주소" readonly/>
+                                            <input type="text" class="custom" placeholder="상세주소" />
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //배송지 정보 입력 -->
+
+                    <!-- 결제정보 -->
+                    <div class="pay-info">
+                        <p class="bold">결제정보</p>
+                        <div class="box">
+                            <ul class="define-list">
+                                <li>
+                                    <dl>
+                                        <dt>결제방법</dt>
+                                        <dd>
+                                            <div class="radio-box">
+                                                <div class="check-wrapper">
+                                                    <input type="radio" id="card" name="pay-method" checked/>
+                                                    <label for="card">신용카드</label>
+                                                </div>
+                                                <div class="check-wrapper">
+                                                    <input type="radio" id="bank" name="pay-method" />
+                                                    <label for="bank">무통장입금</label>
+                                                </div>
+                                                <div class="check-wrapper">
+                                                    <input type="radio" id="account" name="pay-method" />
+                                                    <label for="account">실시간 계좌이체</label>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>포인트</dt>
+                                        <dd>
+                                            <div class="point">
+                                                <div class="input-box">
+                                                    <input type="text" class="custom" value="0"/>
+                                                    <a href="javascript:;" class="button gray-radius">사용</a>
+                                                </div>
+                                                <div class="check-wrapper">
+                                                    <input type="checkbox" id="use-max-point" />
+                                                    <label for="use-max-point">모두사용 (포인트 44,315,700P)</label>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>추가배송비</dt>
+                                        <dd>
+                                            <div class="check-wrapper">
+                                                <input type="checkbox" id="add-shipping" />
+                                                <label for="add-shipping">제주 및 도서산간지역 배송(+3,000원)</label>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>기타안내</dt>
+                                        <dd>
+                                            상품문의 : worldteach@hanmail.net
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <div class="billing-pay">
+                                <ul>
+                                    <li>
+                                        <p>상품금액</p>
+                                        <p>160,000원</p>
+                                    </li>
+                                    <li>
+                                        <p>할인금액</p>
+                                        <p>- 0원</p>
+                                    </li>
+                                    <li>
+                                        <p>배송비</p>
+                                        <p>+ 0원</p>
+                                    </li>
+                                    <li>
+                                        <p>결제금액</p>
+                                        <p class="total">160,000원</p>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <div class="check-wrapper all-check">
+                                        <input type="checkbox" id="order-check-all" name="order-check-all">
+                                        <label for="order-check-all" class="bold">주문 내용을 최종 확인 후 정보수집 이용 및 이용약관에 모두 동의합니다</label>
                                     </div>
-                                </dd>
-                            </dl>
-                        </li>
-                    </ul>
+                                    <div class="terms">
+                                        <div class="check-wrapper">
+                                            <input type="checkbox" id="order-ts">
+                                            <label for="order-ts">전자금융거래 이용약관</label>
+                                        </div>
+                                        <a href="javascript:;">[약관보기]</a>
+                                    </div>
+                                    <div class="terms">
+                                        <div class="check-wrapper">
+                                            <input type="checkbox" id="order-pp">
+                                            <label for="order-pp">개인정보수집 및 이용동의</label>
+                                        </div>
+                                        <a href="javascript:;">[약관보기]</a>
+                                    </div>
+                                </div>
+                                <a href="javascript:;" class="pay-btn">결제하기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //결제정보 -->
                     
                 </div>
                 <!-- //write-wrapper -->
@@ -560,23 +739,6 @@
             </button>
         </li>
     </ul>
-    <script>
-        // 모두 선택 체크박스
-        document.addEventListener("DOMContentLoaded", () => {
-            const checkAll = document.getElementById("od-check-all");
-            const itemCheckboxes = document.querySelectorAll('.order-list td input[type="checkbox"]');
-    
-            checkAll.addEventListener("change", () => {
-                itemCheckboxes.forEach(cb => cb.checked = checkAll.checked);
-            });
-    
-            itemCheckboxes.forEach(cb =>
-                cb.addEventListener("change", () => {
-                    checkAll.checked = [...itemCheckboxes].every(cb => cb.checked);
-                })
-            );
-        });
-    </script>
 </body>
 
 </html>
