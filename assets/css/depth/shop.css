@@ -156,7 +156,7 @@
 }
 
 .page-content.orderpay .write-wrapper .define-list > li dl > dt {
-    width: 10.5rem;
+    width: 11rem;
 }
 
 .write-wrapper .point {
@@ -247,6 +247,10 @@
     margin-top: 2rem;
 }
 
+.page-content.orderpay .check-wrapper:has(#order-info:not(:checked)) ~ .order-info-list {
+    display: none;
+}
+
 
 @media (max-width: 1199px) {
     .page-content .board-wrapper.shop .product-list>li {
@@ -275,6 +279,39 @@
         width: 100%;
         margin-top: 2rem;
     }
+
+    /* SH0201 장바구니 */
+    .page-content.cart .order-wrapper .order-list th:not(:nth-child(1), :nth-child(2)),
+    .page-content.cart .order-wrapper .order-list td:not(:nth-child(1), :nth-child(2)) {
+        display: none;
+    }
+
+    /* SH0202 위시리스트 */
+    .page-content .board-wrapper.wishlist .order-wrapper .order-list th:nth-child(2),
+    .page-content .board-wrapper.wishlist .order-wrapper .order-list td:nth-child(2) {
+        display: none;
+    }
+
+    /* SH0301 결제 - 주문/결제 */
+    .page-content.orderpay .order-wrapper .order-list th:not(:first-child),
+    .page-content.orderpay .order-wrapper .order-list td:not(:first-child) {
+        display: none;
+    }
+
+    .write-wrapper .point {
+        flex-direction: column;
+    }
+
+    .page-content.orderpay .write-wrapper > div.pay-info .box {
+        flex-direction: column;
+    }
+
+    .page-content.orderpay .billing-pay {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -282,5 +319,5 @@
         width: 100%;
     }
 
-
+    
 }

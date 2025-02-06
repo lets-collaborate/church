@@ -1,106 +1,135 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>장바구니 | 디모데성경연구원</title>
-    <link rel="stylesheet" href="../assets/css/common/common.css">
-    <link rel="stylesheet" href="../assets/css/depth/shop.css">
+    <link rel="stylesheet" href="../assets/css/common/common.css" />
+    <link rel="stylesheet" href="../assets/css/depth/shop.css" />
     <script src="../assets/js/jquery-1.10.2.js"></script>
     <script src="../assets/js/common.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="top-wrapper">
-            <div class="inner">
-                <ul>
-                    <li><a href="../login/ST0101.html" class="icon user">회원가입</a></li>
-                    <li><a href="../login/ST0201.html" class="icon power">로그인</a></li>
-                    <li class="search-wrapper">
-                        <div class="search-input">
-                            <input type="text">
-                            <a href="javascript:;" class="icon search">검색</a>
-                        </div>
-                        <a href="javascript:;" id="hideSearchBox" class="icon close">닫기</a>
-                    </li>
-                    <li><a href="javascript:;" id="showSearchBox" class="icon search">검색</a></li>
-                </ul>
-            </div>
+      <div class="top-wrapper">
+        <div class="inner">
+          <ul>
+            <li>
+              <a href="../login/ST0101.html" class="icon user">회원가입</a>
+            </li>
+            <li>
+              <a href="../login/ST0201.html" class="icon power">로그인</a>
+            </li>
+            <li class="search-wrapper">
+              <div class="search-input">
+                <input type="text" />
+                <a href="javascript:;" class="icon search">검색</a>
+              </div>
+              <a href="javascript:;" id="hideSearchBox" class="icon close"
+                >닫기</a
+              >
+            </li>
+            <li>
+              <a href="javascript:;" id="showSearchBox" class="icon search"
+                >검색</a
+              >
+            </li>
+          </ul>
         </div>
-        <nav class="gnb-wrapper inner">
-            <div class="gnb-content">
-                <button type="button" id="toggleMobileMenu" class="gnb-btn">&#9776;</button>
-                <h1><a href="../index.html">디모데성경연구원</a></h1>
-                <div class="list-wrapper">
-                    <div class="user-wrapper">
-                        <div class="user-info">
-                            <div class="user-image">
-                                <img src="../assets/images/profile.gif" alt="">
-                            </div>
-                            <span>로그인을 해주세요</span>
-                            <button type="button" class="icon close">닫기</button>
-                        </div>
-                        <div class="user-btns">
-                            <a href="../login/ST0201.html">
-                                <span class="icon power">로그인</span>
-                            </a>
-                            <a href="../login/ST0101.html">
-                                <span class="icon user">회원가입</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="search-wrapper">
-                        <input type="text" class="input-text">
-                        <a class="icon search" href="javascript:;">검색</a>
-                    </div>
-                    <ul class="gnb-list">
-                        <li>
-                            <div class="depth01">
-                                <a href="../introduce/IN0101.html">
-                                    <h2>기관소개</h2>
-                                </a>
-                                <button type="button" class="toggle-btn">
-                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
-                                </button>
-                            </div>
-                            <ul class="depth02">
-                                <li><a href="../introduce/IN0101.html">디모데성경연구원</a></li>
-                                <li><a href="../introduce/IN0301.html">후원안내</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="depth01">
-                                <a href="../seminar/SE0101.html">
-                                    <h2>세미나</h2>
-                                </a>
-                                <button type="button" class="toggle-btn">
-                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
-                                </button>
-                            </div>
-                            <ul class="depth02">
-                                <li><a href="../seminar/SE0101.html">세미나 신청</a></li>
-                                <li><a href="../seminar/SE0201.html">세미나 진행교회</a></li>
-                                <li><a href="../seminar/SE0301.html">강사요청</a></li>
-                                <li><a href="../seminar/SE0401.html">세미나 후기</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="depth01">
-                                <a href="../shop/SH0101.html">
-                                    <h2>쇼핑몰</h2>
-                                </a>
-                                <!-- 
+      </div>
+      <nav class="gnb-wrapper inner">
+        <div class="gnb-content">
+          <button type="button" id="toggleMobileMenu" class="gnb-btn">
+            &#9776;
+          </button>
+          <h1><a href="../index.html">디모데성경연구원</a></h1>
+          <div class="list-wrapper">
+            <div class="user-wrapper">
+              <div class="user-info">
+                <div class="user-image">
+                  <img src="../assets/images/profile.gif" alt="" />
+                </div>
+                <span>로그인을 해주세요</span>
+                <button type="button" class="icon close">닫기</button>
+              </div>
+              <div class="user-btns">
+                <a href="../login/ST0201.html">
+                  <span class="icon power">로그인</span>
+                </a>
+                <a href="../login/ST0101.html">
+                  <span class="icon user">회원가입</span>
+                </a>
+              </div>
+            </div>
+            <div class="search-wrapper">
+              <input type="text" class="input-text" />
+              <a class="icon search" href="javascript:;">검색</a>
+            </div>
+            <ul class="gnb-list">
+              <li>
+                <div class="depth01">
+                  <a href="../introduce/IN0101.html">
+                    <h2>기관소개</h2>
+                  </a>
+                  <button type="button" class="toggle-btn">
+                    <img
+                      class="on"
+                      src="../assets/images/icon_arrow_up_red.png"
+                      alt=""
+                    />
+                    <img
+                      class="off"
+                      src="../assets/images/icon_arrow_down.png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <ul class="depth02">
+                  <li>
+                    <a href="../introduce/IN0101.html">디모데성경연구원</a>
+                  </li>
+                  <li><a href="../introduce/IN0301.html">후원안내</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="depth01">
+                  <a href="../seminar/SE0101.html">
+                    <h2>세미나</h2>
+                  </a>
+                  <button type="button" class="toggle-btn">
+                    <img
+                      class="on"
+                      src="../assets/images/icon_arrow_up_red.png"
+                      alt=""
+                    />
+                    <img
+                      class="off"
+                      src="../assets/images/icon_arrow_down.png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <ul class="depth02">
+                  <li><a href="../seminar/SE0101.html">세미나 신청</a></li>
+                  <li><a href="../seminar/SE0201.html">세미나 진행교회</a></li>
+                  <li><a href="../seminar/SE0301.html">강사요청</a></li>
+                  <li><a href="../seminar/SE0401.html">세미나 후기</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="depth01">
+                  <a href="../shop/SH0101.html">
+                    <h2>쇼핑몰</h2>
+                  </a>
+                  <!-- 
                                 <button type="button" class="toggle-btn">
                                     <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
                                     <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
                                 </button>
                                 -->
-                            </div>
-                            <!-- 
+                </div>
+                <!-- 
                             <ul class="depth02">
                                 <li><a href="../shop/SH0101.html">강사패키지</a></li>
                                 <li><a href="../shop/SH0101.html">학생용교재</a></li>
@@ -109,412 +138,477 @@
                                 <li><a href="../shop/SH0101.html">대량 구매 / 할인</a></li>
                             </ul>
                              -->
-                        </li>
-                        <li>
-                            <div class="depth01">
-                                <a href="../archieve/AR0401.html">
-                                    <h2>자료실</h2>
-                                </a>
-                                <button type="button" class="toggle-btn">
-                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
-                                </button>
-                            </div>
-                            <ul class="depth02">
-                                <li><a href="../archieve/AR0201.html">사진게시판</a></li>
-                                <li><a href="../archieve/AR0301.html">칼럼</a></li>
-                                <li><a href="../archieve/AR0401.html">자료실</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="depth01">
-                                <a href="../support/SU0101.html">
-                                    <h2>고객센터</h2>
-                                </a>
-                                <button type="button" class="toggle-btn">
-                                    <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
-                                    <img class="off" src="../assets/images/icon_arrow_down.png" alt="">
-                                </button>
-
-                            </div>
-                            <ul class="depth02">
-                                <li><a href="../support/SU0101.html">공지사항</a></li>
-                                <li><a href="../support/SU0201.html">FAQ</a></li>
-                                <li><a href="../support/SU0301.html">1:1 문의</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+              </li>
+              <li>
+                <div class="depth01">
+                  <a href="../archieve/AR0401.html">
+                    <h2>자료실</h2>
+                  </a>
+                  <button type="button" class="toggle-btn">
+                    <img
+                      class="on"
+                      src="../assets/images/icon_arrow_up_red.png"
+                      alt=""
+                    />
+                    <img
+                      class="off"
+                      src="../assets/images/icon_arrow_down.png"
+                      alt=""
+                    />
+                  </button>
                 </div>
-            </div>
-        </nav>
+                <ul class="depth02">
+                  <li><a href="../archieve/AR0201.html">사진게시판</a></li>
+                  <li><a href="../archieve/AR0301.html">칼럼</a></li>
+                  <li><a href="../archieve/AR0401.html">자료실</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="depth01">
+                  <a href="../support/SU0101.html">
+                    <h2>고객센터</h2>
+                  </a>
+                  <button type="button" class="toggle-btn">
+                    <img
+                      class="on"
+                      src="../assets/images/icon_arrow_up_red.png"
+                      alt=""
+                    />
+                    <img
+                      class="off"
+                      src="../assets/images/icon_arrow_down.png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <ul class="depth02">
+                  <li><a href="../support/SU0101.html">공지사항</a></li>
+                  <li><a href="../support/SU0201.html">FAQ</a></li>
+                  <li><a href="../support/SU0301.html">1:1 문의</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <section class="page-sub">
-        <div class="visual-wrapper" style="background-image: url(../assets/images/login_visual.jpg);">
-            <p class="visual-text inner">성숙한 성도로 영향력 있는 지도자</p>
-        </div>
-        <div class="page-wrapper inner">
-            <div class="page-content">
-                <h3>장바구니</h3>
-                <ul class="order-process">
-                    <li class="on">01 장바구니</li>
-                    <li>02 주문/결제</li>
-                    <li>03 주문완료</li>
-                </ul>
-                <div class="order-wrapper">
-                    <div class="order-list">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th style="width: 5rem;"><input type="checkbox" id="od-check-all" checked/></th>
-                                    <th>상품/옵션정보</th>
-                                    <th style="width: 8rem;">수량</th>
-                                    <th style="width: 11rem;">상품금액</th>
-                                    <th style="width: 6rem;"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- 장바구니에 상품 없을 시 -->
-                                <!-- <tr>
+      <div
+        class="visual-wrapper"
+        style="background-image: url(../assets/images/login_visual.jpg)"
+      >
+        <p class="visual-text inner">성숙한 성도로 영향력 있는 지도자</p>
+      </div>
+      <div class="page-wrapper inner">
+        <div class="page-content cart overflow-vi">
+          <h3>장바구니</h3>
+          <ul class="order-process">
+            <li class="on">01 장바구니</li>
+            <li>02 주문/결제</li>
+            <li>03 주문완료</li>
+          </ul>
+          <div class="order-wrapper">
+            <div class="order-list">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="width: 5rem">
+                      <input type="checkbox" id="od-check-all" checked />
+                    </th>
+                    <th>상품/옵션정보</th>
+                    <th style="width: 8rem">수량</th>
+                    <th style="width: 11rem">상품금액</th>
+                    <th style="width: 6rem"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 장바구니에 상품 없을 시 -->
+                  <!-- <tr>
                                     <td colspan="5">등록된 상품이 없습니다</td>
                                 </tr> -->
-                                <tr>
-                                    <td><input type="checkbox" id="od-check01" checked/></td>
-                                    <td class="item-info">
-                                        <a href="./SH0102.html" class="item-image">
-                                            <img src="../assets/images/sample_shop03.png" alt="">
-                                        </a>
-                                        <div>
-                                            <a href="./SH0102.html" class="product-title">[강사패키지] 성도답게 행하라</a>
-                                            <p class="red">학생용 교재1권+다운로드자료(인도자 지침서 PDF파일+강의 음성 파일+강의 PPT 파일) / 2개</p>
-                                        </div>
-                                    </td>
-                                    <td class="item-count"><input class="custom" maxlength="3" value="1" type="text" readonly="" /></td>
-                                    <td class="item-price">80,000원</td>
-                                    <td class="item-btns">
-                                        <a href="javascript:;" class="button gray-radius">주문</a>
-                                        <a href="javascript:;" class="button gray-radius">삭제</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" id="od-check02" checked/></td>
-                                    <td class="item-info">
-                                        <a href="./SH0102.html" class="item-image">
-                                            <img src="../assets/images/sample_shop03.png" alt="">
-                                        </a>
-                                        <div>
-                                            <a href="./SH0102.html" class="product-title">[강사패키지] 성도답게 행하라</a>
-                                            <p class="red">학생용 교재1권+다운로드자료(인도자 지침서 PDF파일+강의 음성 파일+강의 PPT 파일) / 2개</p>
-                                        </div>
-                                    </td>
-                                    <td class="item-count"><input class="custom" maxlength="3" value="1" type="text" readonly="" /></td>
-                                    <td class="item-price">80,000원</td>
-                                    <td class="item-btns">
-                                        <a href="javascript:;" class="button gray-radius">주문</a>
-                                        <a href="javascript:;" class="button gray-radius">삭제</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- //order-list -->
-                    <div class="price-list">
-                        <dl>
-                            <dt>상품금액</dt>
-                            <dd>160,000원</dd>
-                        </dl>
-                        <dl>
-                            <dt>할인금액</dt>
-                            <dd>- 0원</dd>
-                        </dl>
-                        <dl>
-                            <dt>결제금액</dt>
-                            <dd class="red">160,000원</dd>
-                        </dl>
-                    </div>
-                    <!-- //price-list -->
-                    <div class="order-btns between">
-                        <div>
-                            <!-- 해당 버튼 미사용 시 a태그만 삭제 -->
-                            <a href="javascript:;" class="button gray-radius">설정</a> 
-                        </div>
-                        <div>
-                            <a href="./SH0301.html" class="button gray-radius">선택상품주문</a>
-                            <a href="./SH0301.html" class="button gray-radius">전체주문</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- //order-wrapper -->
+                  <tr>
+                    <td><input type="checkbox" id="od-check01" checked /></td>
+                    <td class="item-info">
+                      <a href="./SH0102.html" class="item-image">
+                        <img src="../assets/images/sample_shop03.png" alt="" />
+                      </a>
+                      <div>
+                        <a href="./SH0102.html" class="product-title"
+                          >[강사패키지] 성도답게 행하라</a
+                        >
+                        <p class="red">
+                          학생용 교재1권+다운로드자료(인도자 지침서 PDF파일+강의
+                          음성 파일+강의 PPT 파일) / 2개
+                        </p>
+                        <p class="item-price-small">80,000원</p>
+                      </div>
+                    </td>
+                    <td class="item-count">
+                      <input
+                        class="custom"
+                        maxlength="3"
+                        value="1"
+                        type="text"
+                        readonly=""
+                      />
+                    </td>
+                    <td class="item-price">80,000원</td>
+                    <td class="item-btns">
+                      <a href="javascript:;" class="button gray-radius">주문</a>
+                      <a href="javascript:;" class="button gray-radius">삭제</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" id="od-check02" checked /></td>
+                    <td class="item-info">
+                      <a href="./SH0102.html" class="item-image">
+                        <img src="../assets/images/sample_shop03.png" alt="" />
+                      </a>
+                      <div>
+                        <a href="./SH0102.html" class="product-title"
+                          >[강사패키지] 성도답게 행하라</a
+                        >
+                        <p class="red">
+                          학생용 교재1권+다운로드자료(인도자 지침서 PDF파일+강의
+                          음성 파일+강의 PPT 파일) / 2개
+                        </p>
+                        <p class="item-price-small">80,000원</p>
+                      </div>
+                    </td>
+                    <td class="item-count">
+                      <input
+                        class="custom"
+                        maxlength="3"
+                        value="1"
+                        type="text"
+                        readonly=""
+                      />
+                    </td>
+                    <td class="item-price">80,000원</td>
+                    <td class="item-btns">
+                      <a href="javascript:;" class="button gray-radius">주문</a>
+                      <a href="javascript:;" class="button gray-radius">삭제</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="page-sidebar">
-                <h4>나의계정</h4>
+            <!-- //order-list -->
+            <div class="price-list">
+              <dl>
+                <dt>상품금액</dt>
+                <dd>160,000원</dd>
+              </dl>
+              <dl>
+                <dt>할인금액</dt>
+                <dd>- 0원</dd>
+              </dl>
+              <dl>
+                <dt>결제금액</dt>
+                <dd class="red">160,000원</dd>
+              </dl>
+            </div>
+            <!-- //price-list -->
+            <div class="order-btns between">
+              <div>
+                <!-- 해당 버튼 미사용 시 a태그만 삭제 -->
+                <a href="javascript:;" class="button gray-radius">설정</a>
+              </div>
+              <div>
+                <a href="./SH0301.html" class="button gray-radius"
+                  >선택상품주문</a
+                >
+                <a href="./SH0301.html" class="button gray-radius">전체주문</a>
+              </div>
+            </div>
+          </div>
+          <!-- //order-wrapper -->
+        </div>
+        <div class="page-sidebar">
+          <h4>나의계정</h4>
 
-                <ul class="menu-list">
-                    <li><a href="javascript:;">장바구니</a></li>
-                    <li><a href="javascript:;">수강내역/파일다운로드</a></li>
-                    <li><a href="javascript:;">주문/배송조회</a></li>
-                    <li><a href="javascript:;">회원정보</a></li>
-                    <li><a href="javascript:;">비밀번호 수정</a></li>
-                </ul>
-                
-                <div class="login-wrapper">
-                    <div class="input-wrapper">
-                        <dl>
-                            <dt>아이디</dt>
-                            <dd><input type="text" class="custom" placeholder="ID"></dd>
-                        </dl>
-                        <dl>
-                            <dt>비밀번호</dt>
-                            <dd><input type="password" class="custom" placeholder="Password"></dd>
-                        </dl>
-                    </div>
-                    <div class="option-wrapper">
-                        <div class="check-wrapper">
-                            <input type="checkbox" id="isAutoLogin">
-                            <label for="isAutoLogin">자동로그인</label>
-                        </div>
-                        <a href="javascript:;" class="button gray-radius">로그인</a>
-                    </div>
-                    <div class="button-wrapper">
-                        <a href="javascript:;" class="button gray-radius">회원가입</a>
-                        <a href="javascript:;" class="button gray-radius">비밀번호 찾기</a>
-                    </div>
-                </div>
-                <div class="cart-wrapper">
-                    <h5>장바구니</h5>
-                    <ul class="cart-list">
-                        <li>
-                            <a href="javascript:;">
-                                <span class="item-image">
-                                    <img src="../assets/images/sample_shop03.png" alt="">
-                                </span>
-                                <dl>
-                                    <dt>[강사패키지] 성도답게 행하라</dt>
-                                    <dd class="red">
-                                        학생용 교재1권+다운로드자료(인도자 지침서 PDF파일+강의 음성 파일+강의 PPT 파일)
-                                    </dd>
-                                    <dd class="blue">
-                                        학생용 교재 추가구입(선택) / 1개 +5,000원
-                                    </dd>
-                                </dl>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- 장바구니에 상품 없을경우 -->
-                    <!-- <p class="cart-empty">등록된 상품이 없습니다.</p> -->
-                    <div class="total-wrapper">
-                        <span>합계: <em>80,000</em>원</span>
-                        <a href="javascript:;" class="button gray-radius">장바구니</a>
-                    </div>
-                </div>
-                <div class="banner-wrapper">
-                    <a href="javascript:;">
-                        <img src="../assets/images/side_banner.jpg" alt="">
-                    </a>
-                </div>
+          <ul class="menu-list">
+            <li><a href="../shop/SH0201.html">장바구니</a></li>
+            <li><a href="../mypage/MY0101.html">수강내역/파일다운로드</a></li>
+            <li><a href="../mypage/MY0201.html">주문/배송조회</a></li>
+            <li><a href="../mypage/MY0301.html">회원정보</a></li>
+            <li><a href="../mypage/MY0302.html">비밀번호 수정</a></li>
+          </ul>
+
+          <div class="login-wrapper">
+            <div class="input-wrapper">
+              <dl>
+                <dt>아이디</dt>
+                <dd><input type="text" class="custom" placeholder="ID" /></dd>
+              </dl>
+              <dl>
+                <dt>비밀번호</dt>
+                <dd>
+                  <input
+                    type="password"
+                    class="custom"
+                    placeholder="Password"
+                  />
+                </dd>
+              </dl>
             </div>
-        </div>
-        <div class="common-content">
-            <div class="common-style support-wrapper">
-                <div class="inner">
-                    <dl class="common-title">
-                        <dt>고객지원</dt>
-                        <dd>디모데성경연구원은 고객의 의견을 소중히 생각합니다.</dd>
-                    </dl>
-                    <ul class="support-list">
-                        <li>
-                            <a href="../support/SU0101.html">
-                                <span>공지사항</span>
-                                <span class="icon notice"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../support/SU0201.html">
-                                <span>자주묻는질문</span>
-                                <span class="icon faq"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../support/SU0301.html">
-                                <span>1:1 문의</span>
-                                <span class="icon qna"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <span>고객문의</span>
-                                <span><strong>02-2652-0919</strong></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="option-wrapper">
+              <div class="check-wrapper">
+                <input type="checkbox" id="isAutoLogin" />
+                <label for="isAutoLogin">자동로그인</label>
+              </div>
+              <a href="javascript:;" class="button gray-radius">로그인</a>
             </div>
-            <div class="common-style info-wrapper inner">
-                <dl class="common-title">
-                    <dt>디모데성경연구원을 소개합니다.</dt>
-                    <dd>
-                        디모데성경연구원은 제자도와 지도력을 위해 탁월한 성경적 가르침과 훈련을 위한 자료들을 제공하는 말씀사역 기관입니다.
+            <div class="button-wrapper">
+              <a href="javascript:;" class="button gray-radius">회원가입</a>
+              <a href="javascript:;" class="button gray-radius"
+                >비밀번호 찾기</a
+              >
+            </div>
+          </div>
+          <div class="cart-wrapper">
+            <h5>장바구니</h5>
+            <ul class="cart-list">
+              <li>
+                <a href="javascript:;">
+                  <span class="item-image">
+                    <img src="../assets/images/sample_shop03.png" alt="" />
+                  </span>
+                  <dl>
+                    <dt>[강사패키지] 성도답게 행하라</dt>
+                    <dd class="red">
+                      학생용 교재1권+다운로드자료(인도자 지침서 PDF파일+강의
+                      음성 파일+강의 PPT 파일)
                     </dd>
-                </dl>
-                <div class="link-wrapper">
-                    <a href="javascript:;" class="link-banner">
-                        <img src="../assets/images/bottom_banner.png" alt="">
-                    </a>
-                    <ul class="link-list">
-                        <li>
-                            <a href="../introduce/IN0101.html">
-                                <dl>
-                                    <dt>기관소개</dt>
-                                    <dd>디모데성경연구원을 소개합니다.</dd>
-                                </dl>
-                                <span class="icon more">더보기</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <dl>
-                                    <dt>6대 핵심과목</dt>
-                                    <dd>디모데성경연구원의 핵심과목을 알아보세요.</dd>
-                                </dl>
-                                <span class="icon more">더보기</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../seminar/SE0101.html">
-                                <dl>
-                                    <dt>세미나 신청</dt>
-                                    <dd>세미나에 참석하세요.</dd>
-                                </dl>
-                                <span class="icon more">더보기</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <dl>
-                                    <dt>세미나 장소안내</dt>
-                                    <dd>세미나 장소를 알려드립니다.</dd>
-                                </dl>
-                                <span class="icon more">더보기</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <dl>
-                                    <dt>사역일정</dt>
-                                    <dd>사역일정을 알려드립니다.</dd>
-                                </dl>
-                                <span class="icon more">더보기</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../archieve/AR0301.html">
-                                <dl>
-                                    <dt>칼럼</dt>
-                                    <dd>디모데의 칼럼자료실 입니다.</dd>
-                                </dl>
-                                <span class="icon more">더보기</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../shop/SH0101.html">
-                                <dl>
-                                    <dt>쇼핑몰</dt>
-                                    <dd>특별한 자료들을 만나보세요.</dd>
-                                </dl>
-                                <span class="icon more">더보기</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../archieve/AR0401.html">
-                                <dl>
-                                    <dt>자료실</dt>
-                                    <dd>도움이 되는 자료를 다운받으세요.</dd>
-                                </dl>
-                                <span class="icon more">더보기</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <dd class="blue">
+                      학생용 교재 추가구입(선택) / 1개 +5,000원
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+            </ul>
+            <!-- 장바구니에 상품 없을경우 -->
+            <!-- <p class="cart-empty">등록된 상품이 없습니다.</p> -->
+            <div class="total-wrapper">
+              <span>합계: <em>80,000</em>원</span>
+              <a href="javascript:;" class="button gray-radius">장바구니</a>
             </div>
+          </div>
+          <div class="banner-wrapper">
+            <a href="javascript:;">
+              <img src="../assets/images/side_banner.jpg" alt="" />
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="common-content">
+        <div class="common-style support-wrapper">
+          <div class="inner">
+            <dl class="common-title">
+              <dt>고객지원</dt>
+              <dd>디모데성경연구원은 고객의 의견을 소중히 생각합니다.</dd>
+            </dl>
+            <ul class="support-list">
+              <li>
+                <a href="../support/SU0101.html">
+                  <span>공지사항</span>
+                  <span class="icon notice"></span>
+                </a>
+              </li>
+              <li>
+                <a href="../support/SU0201.html">
+                  <span>자주묻는질문</span>
+                  <span class="icon faq"></span>
+                </a>
+              </li>
+              <li>
+                <a href="../support/SU0301.html">
+                  <span>1:1 문의</span>
+                  <span class="icon qna"></span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <span>고객문의</span>
+                  <span><strong>02-2652-0919</strong></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="common-style info-wrapper inner">
+          <dl class="common-title">
+            <dt>디모데성경연구원을 소개합니다.</dt>
+            <dd>
+              디모데성경연구원은 제자도와 지도력을 위해 탁월한 성경적 가르침과
+              훈련을 위한 자료들을 제공하는 말씀사역 기관입니다.
+            </dd>
+          </dl>
+          <div class="link-wrapper">
+            <a href="javascript:;" class="link-banner">
+              <img src="../assets/images/bottom_banner.png" alt="" />
+            </a>
+            <ul class="link-list">
+              <li>
+                <a href="../introduce/IN0101.html">
+                  <dl>
+                    <dt>기관소개</dt>
+                    <dd>디모데성경연구원을 소개합니다.</dd>
+                  </dl>
+                  <span class="icon more">더보기</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <dl>
+                    <dt>6대 핵심과목</dt>
+                    <dd>디모데성경연구원의 핵심과목을 알아보세요.</dd>
+                  </dl>
+                  <span class="icon more">더보기</span>
+                </a>
+              </li>
+              <li>
+                <a href="../seminar/SE0101.html">
+                  <dl>
+                    <dt>세미나 신청</dt>
+                    <dd>세미나에 참석하세요.</dd>
+                  </dl>
+                  <span class="icon more">더보기</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <dl>
+                    <dt>세미나 장소안내</dt>
+                    <dd>세미나 장소를 알려드립니다.</dd>
+                  </dl>
+                  <span class="icon more">더보기</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <dl>
+                    <dt>사역일정</dt>
+                    <dd>사역일정을 알려드립니다.</dd>
+                  </dl>
+                  <span class="icon more">더보기</span>
+                </a>
+              </li>
+              <li>
+                <a href="../archieve/AR0301.html">
+                  <dl>
+                    <dt>칼럼</dt>
+                    <dd>디모데의 칼럼자료실 입니다.</dd>
+                  </dl>
+                  <span class="icon more">더보기</span>
+                </a>
+              </li>
+              <li>
+                <a href="../shop/SH0101.html">
+                  <dl>
+                    <dt>쇼핑몰</dt>
+                    <dd>특별한 자료들을 만나보세요.</dd>
+                  </dl>
+                  <span class="icon more">더보기</span>
+                </a>
+              </li>
+              <li>
+                <a href="../archieve/AR0401.html">
+                  <dl>
+                    <dt>자료실</dt>
+                    <dd>도움이 되는 자료를 다운받으세요.</dd>
+                  </dl>
+                  <span class="icon more">더보기</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
-        <div class="link-wrapper inner">
-            <ul class="term-list">
-                <li><a href="javascript:;">개인정보처리방침</a></li>
-                <li><a href="javascript:;">이메일무단수집거부</a></li>
-                <li><a href="javascript:;">이용약관</a></li>
-                <li><a href="javascript:;">오시는길</a></li>
-            </ul>
-            <ul class="sns-list">
-                <li><a class="icon facebook" href="javascript:;">페이스북</a></li>
-                <li><a class="icon blog" href="javascript:;">네이버블로그</a></li>
-                <li><a class="icon youtube" href="javascript:;">유튜브</a></li>
-                <li><a class="icon kakao" href="javascript:;">카카오톡</a></li>
-                <li><a class="icon insta" href="javascript:;">인스타그램</a></li>
-            </ul>
-        </div>
-        <div class="info-wrapper inner">
-            <ul class="info-list">
-                <li class="italic">
-                    서울 강서구 마곡중앙6로 11, 보타닉파크타워3차 1006호(우, 07801)
-                </li>
-                <li>
-                    대표: 신현빈 | TEL : 02-2652-0919, 070-7537-2152,2153 | E-mail : worldteach@hanmail.net
-                </li>
-                <li>
-                    업무시간 : 월~금 09:30~17:00 | 입금계좌 : 922901-01-223697 (국민은행, 월드티치신현빈)
-                </li>
-                <li>
-                    사업자번호: 117-91-15532 | 통신판매업신고번호 : 2021-서울강서-1832
-                </li>
-            </ul>
-            <p class="copyright">Copyright © 2019 Worldteach All Rights Reserved.</p>
-        </div>
+      <div class="link-wrapper inner">
+        <ul class="term-list">
+          <li><a href="javascript:;">개인정보처리방침</a></li>
+          <li><a href="javascript:;">이메일무단수집거부</a></li>
+          <li><a href="javascript:;">이용약관</a></li>
+          <li><a href="javascript:;">오시는길</a></li>
+        </ul>
+        <ul class="sns-list">
+          <li><a class="icon facebook" href="javascript:;">페이스북</a></li>
+          <li><a class="icon blog" href="javascript:;">네이버블로그</a></li>
+          <li><a class="icon youtube" href="javascript:;">유튜브</a></li>
+          <li><a class="icon kakao" href="javascript:;">카카오톡</a></li>
+          <li><a class="icon insta" href="javascript:;">인스타그램</a></li>
+        </ul>
+      </div>
+      <div class="info-wrapper inner">
+        <ul class="info-list">
+          <li class="italic">
+            서울 강서구 마곡중앙6로 11, 보타닉파크타워3차 1006호(우, 07801)
+          </li>
+          <li>
+            대표: 신현빈 | TEL : 02-2652-0919, 070-7537-2152,2153 | E-mail :
+            worldteach@hanmail.net
+          </li>
+          <li>
+            업무시간 : 월~금 09:30~17:00 | 입금계좌 : 922901-01-223697
+            (국민은행, 월드티치신현빈)
+          </li>
+          <li>
+            사업자번호: 117-91-15532 | 통신판매업신고번호 : 2021-서울강서-1832
+          </li>
+        </ul>
+        <p class="copyright">
+          Copyright © 2019 Worldteach All Rights Reserved.
+        </p>
+      </div>
     </footer>
     <ul class="float-list">
-        <li>
-            <a class="float-icon" href="javascript:;">
-                <img src="../assets/images/icon_fix_coupon.png" alt="">
-            </a>
-        </li>
-        <li>
-            <a class="float-icon" href="javascript:;">
-                <img src="../assets/images/icon_fix_cart.png" alt="">
-            </a>
-        </li>
-        <li>
-            <a class="float-icon" href="javascript:;">
-                <img src="../assets/images/icon_fix_star.png" alt="">
-            </a>
-        </li>
-        <li>
-            <button type="button" id="scrollUp" class="float-icon">
-                <img src="../assets/images/icon_fix_up.png" alt="">
-            </button>
-        </li>
-        <li>
-            <button type="button" id="scrollDown" class="float-icon">
-                <img src="../assets/images/icon_fix_down.png" alt="">
-            </button>
-        </li>
+      <li>
+        <a class="float-icon" href="javascript:;">
+          <img src="../assets/images/icon_fix_coupon.png" alt="" />
+        </a>
+      </li>
+      <li>
+        <a class="float-icon" href="javascript:;">
+          <img src="../assets/images/icon_fix_cart.png" alt="" />
+        </a>
+      </li>
+      <li>
+        <a class="float-icon" href="javascript:;">
+          <img src="../assets/images/icon_fix_star.png" alt="" />
+        </a>
+      </li>
+      <li>
+        <button type="button" id="scrollUp" class="float-icon">
+          <img src="../assets/images/icon_fix_up.png" alt="" />
+        </button>
+      </li>
+      <li>
+        <button type="button" id="scrollDown" class="float-icon">
+          <img src="../assets/images/icon_fix_down.png" alt="" />
+        </button>
+      </li>
     </ul>
     <script>
-        // 모두 선택 체크박스
-        document.addEventListener("DOMContentLoaded", () => {
-            const checkAll = document.getElementById("od-check-all");
-            const itemCheckboxes = document.querySelectorAll('.order-list td input[type="checkbox"]');
-    
-            checkAll.addEventListener("change", () => {
-                itemCheckboxes.forEach(cb => cb.checked = checkAll.checked);
-            });
-    
-            itemCheckboxes.forEach(cb =>
-                cb.addEventListener("change", () => {
-                    checkAll.checked = [...itemCheckboxes].every(cb => cb.checked);
-                })
-            );
-        });
-    </script>
-</body>
+      // 모두 선택 체크박스
+      document.addEventListener("DOMContentLoaded", () => {
+        const checkAll = document.getElementById("od-check-all");
+        const itemCheckboxes = document.querySelectorAll(
+          '.order-list td input[type="checkbox"]'
+        );
 
+        checkAll.addEventListener("change", () => {
+          itemCheckboxes.forEach(cb => (cb.checked = checkAll.checked));
+        });
+
+        itemCheckboxes.forEach(cb =>
+          cb.addEventListener("change", () => {
+            checkAll.checked = [...itemCheckboxes].every(cb => cb.checked);
+          })
+        );
+      });
+    </script>
+  </body>
 </html>

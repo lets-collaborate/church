@@ -1278,12 +1278,14 @@ input.custom.wd-medium {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .write-wrapper .define-list .radio-box {
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .write-wrapper input.custom,
@@ -1522,6 +1524,14 @@ input.custom.wd-medium {
     margin-bottom: 0.8rem;
 }
 
+.order-wrapper .order-list .item-price-small {
+    font-size: var(--font-size-xs);
+    color: var(--gray-mid1);
+    font-weight: var(--bold);
+    margin-top: 0.3rem;
+    display: none;
+}
+
 .order-wrapper .order-list .item-count input.custom {
     height: 2.1rem;
     width: 4rem;
@@ -1549,6 +1559,7 @@ input.custom.wd-medium {
     border: 1px solid var(--gray-neutral5);
     background: var(--gray-neutral2);
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .order-wrapper .price-list > dl {
@@ -1777,6 +1788,22 @@ input.custom.wd-medium {
         overflow: hidden;
         text-overflow: ellipsis;
         width: calc(100% - 4rem);
+    }
+
+    /* 주문 게시판 */
+    .order-process {
+        display: none;
+    }
+
+    .order-wrapper .price-list > dl:last-child {
+        width: 100%;
+        flex: none;
+        border-top: 1px solid var(--gray-neutral5);
+        border-left: 0;
+    }
+
+    .order-wrapper .order-list .item-price-small {
+        display: block;
     }
 }
 

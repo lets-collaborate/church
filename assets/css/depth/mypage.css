@@ -1,0 +1,39 @@
+/* MY0302 회원정보 - 비밀번호 수정 */
+.page-content .write-wrapper.modify-password {
+  max-width: 84rem;
+  border: 1px solid var(--gray-mid2);
+  margin: 0 auto;
+  padding: 7rem;
+  box-sizing: border-box;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+
+.page-content .write-wrapper.modify-password .title {
+  font-size: var(--font-size-basic);
+  font-weight: var(--bold);
+  color: var(--gray-dark1);
+  margin-bottom: 0.7rem;
+}
+
+.page-content .write-wrapper.modify-password .btn-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+
+/******************** 미디어쿼리 ********************/
+@media (max-width: 767px) {
+  /* MY0302 회원정보 - 비밀번호 수정 */
+  .page-content .write-wrapper.modify-password {
+    border: 0;
+    padding: 0;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .page-content .write-wrapper.modify-password input.custom {
+    width: 100%;
+  }
+}
