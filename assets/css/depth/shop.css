@@ -251,6 +251,51 @@
     display: none;
 }
 
+/* SH0302 결제 - 주문완료 */
+.page-content.order-result .word-wrapper > div + div {
+    margin-top: 4.5rem;
+}
+
+.page-content.order-result .order-price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.page-content.order-result .order-item {
+    display: flex;
+    border: 1px solid var(--gray-neutral4);
+    padding: 1rem;
+    box-sizing: border-box;
+    color: var(--gray-dark3);
+    margin: 1rem 0;
+}
+
+.page-content.order-result .order-item .item-image {
+    display: block;
+    width: 11rem;
+    border: 1px solid var(--gray-neutral4);
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+
+.page-content.order-result .order-item .item-image img {
+    width: 100%;
+}
+
+.page-content.order-result .order-item .product-title {
+    display: block;
+    font-weight: var(--bold);
+    margin-bottom: 0.8rem;
+}
+
+.page-content.order-result .order-item .item-price {
+    font-size: var(--font-size-xs);
+    margin-top: 0.3rem;
+}
+
 
 @media (max-width: 1199px) {
     .page-content .board-wrapper.shop .product-list>li {
@@ -312,6 +357,11 @@
         margin-top: 1rem;
     }
     
+    /* SH0302 결제 - 주문완료 */
+    .page-content.order-result .order-item .description {
+        display: none;
+    }
+
 }
 
 @media (max-width: 480px) {
