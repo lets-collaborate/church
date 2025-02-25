@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원정보 | 디모데성경연구원</title>
+    <title>공지사항 | 디모데성경연구원</title>
     <link rel="stylesheet" href="../assets/css/common/common.css">
     <link rel="stylesheet" href="../assets/css/depth/mypage.css">
     <script src="../assets/js/jquery-1.10.2.js"></script>
@@ -135,7 +135,7 @@
                         <li>
                             <div class="depth01">
                                 <a href="../support/SU0101.html">
-                                    <h2>고객센터</h2>
+                                    <h2 class="red">고객센터</h2>
                                 </a>
                                 <button type="button" class="toggle-btn">
                                     <img class="on" src="../assets/images/icon_arrow_up_red.png" alt="">
@@ -144,7 +144,7 @@
 
                             </div>
                             <ul class="depth02">
-                                <li><a href="../support/SU0101.html">공지사항</a></li>
+                                <li class="red"><a href="../support/SU0101.html">공지사항</a></li>
                                 <li><a href="../support/SU0201.html">FAQ</a></li>
                                 <li><a href="../support/SU0301.html">1:1 문의</a></li>
                             </ul>
@@ -155,177 +155,133 @@
         </nav>
     </header>
     <section class="page-sub">
-        <div class="visual-wrapper" style="background-image: url(../assets/images/login_visual.jpg);">
+        <div class="visual-wrapper" style="background-image: url(../assets/images/support_visual.jpg);">
             <p class="visual-text inner">성숙한 성도로 영향력 있는 지도자</p>
         </div>
         <div class="page-wrapper inner">
-            <div class="page-content overflow-vi">
-                <h3>회원정보</h3>
-                <div class="write-wrapper">
-                    <ul class="define-list">
-                        <li>
-                            <dl>
-                                <dt>아이디</dt>
-                                <dd>
-                                    worldteach
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>성명(*)</dt>
-                                <dd>
-                                    <div class="input-box">
-                                        <input type="text" class="custom" value="홍길동" required />
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>이메일주소</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom" value="hong@gmail.com" />
-                                            <div class="check-wrapper">
-                                                <input type="checkbox" id="receive-mail" checked />
-                                                <label for="receive-mail">수신동의</label>
-                                            </div>
+            <div class="page-content">
+                <h3>주문/배송조회</h3>
+                <div class="board-wrapper order">
+                    <div class="board-filter">
+                        <div class="board-search">
+                            <select class="custom">
+                                <option value="1">주문 상품 정보</option>
+                                <option value="2">결제금액</option>
+                                <option value="3">주문상태</option>
+                            </select>
+                            <input type="text" class="custom">
+                            <a href="javascript:;" class="button gray-radius">검색</a>
+                        </div>
+                    </div>
+                    <div class="board-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>주문일자</th>
+                                    <th>주문 상품 정보</th>
+                                    <th>결제금액</th>
+                                    <th>주문상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="notice" onClick="location.href='./MY0202.html'">
+                                    <td>
+                                        <span>2025-02-06</span>
+                                        <span class="font-xxs order-number">(2-250206-0916042598225982)</span>
+                                    </td>
+                                    <td>
+                                        <div class="product">
+                                            <span class="order-image">
+                                                <img src="../assets/images/sample_mypage_order01.png" alt="">
+                                            </span>
+                                            <dl class="order-text">
+                                                <dt>신약의 파노라마 학생용 교재</dt>
+                                                <dd>신약의 파노라마 강사님만 구입하실 수 있습니다.</dd>
+                                                <dd><em>12,000</em>원</dd>
+                                            </dl>
                                         </div>
-                                        <p class="noti-txt">예) aaa@aaa.com</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>생년월일</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom" />
+                                    </td>
+                                    <td>
+                                        <span class="red bold"><em>12,000</em>원</span>
+                                        <span class="font-xxs">(배송비:<em>3,000</em>원)</span>
+                                    </td>
+                                    <td>
+                                        <span class="blue bold">판매완료</span>
+                                        <a href="javascript:;" class="button gray-radius">배송조회</a>
+                                    </td>
+                                </tr>
+                                <tr class="notice" onClick="location.href='./MY0202.html'">
+                                    <td>
+                                        <span>2025-02-06</span>
+                                        <span class="font-xxs order-number">(2-250206-0916042598225982)</span>
+                                    </td>
+                                    <td>
+                                        <div class="product">
+                                            <span class="order-image">
+                                                <img src="../assets/images/sample_mypage_order02.png" alt="">
+                                            </span>
+                                            <dl class="order-text">
+                                                <dt>구약의 파노라마 학생용 교재</dt>
+                                                <dd>구약의 파노라마 강사님들만 구입하실 수 있습니다.</dd>
+                                                <dd><em>12,000</em>원</dd>
+                                            </dl>
                                         </div>
-                                        <p class="noti-txt">예) 2019/01/01</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>휴대전화</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom" value="010-1234-5678" />
-                                            <div class="check-wrapper">
-                                                <input type="checkbox" id="receive-phone" checked />
-                                                <label for="receive-phone">수신동의</label>
-                                            </div>
+                                    </td>
+                                    <td>
+                                        <span class="red bold"><em>12,000</em>원</span>
+                                    </td>
+                                    <td>
+                                        <span class="blue bold">판매완료</span>
+                                        <a href="javascript:;" class="button gray-radius">배송조회</a>
+                                    </td>
+                                </tr>
+                                <tr class="notice" onClick="location.href='./MY0202.html'">
+                                    <td>
+                                        <span>2025-02-06</span>
+                                        <span class="font-xxs order-number">(2-250206-0916042598225982)</span>
+                                    </td>
+                                    <td>
+                                        <div class="product">
+                                            <span class="order-image">
+                                                <img src="../assets/images/sample_mypage_order03.png" alt="">
+                                            </span>
+                                            <dl class="order-text">
+                                                <dt>성도를 세우는 5가지 기둥 학생용 교재</dt>
+                                                <dd>성도를 세우는 5가지 기둥의 강사님들만 구입하실 수 있습니다.</dd>
+                                                <dd><em>12,000</em>원</dd>
+                                            </dl>
                                         </div>
-                                        <p class="noti-txt">예) 010-1234-4567</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>일반전화</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom" />
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>교회</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <input type="text" class="custom" />
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>직분</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <select class="custom">
-                                                <option value="담임목사">담임목사</option>
-                                                <option value="목사" selected="">목사</option>
-                                                <option value="강도사">강도사</option>
-                                                <option value="전도사">전도사</option>
-                                                <option value="선교사">선교사</option>
-                                                <option value="장로">장로</option>
-                                                <option value="권사">권사</option>
-                                                <option value="집사">집사</option>
-                                                <option value="학생">학생</option>
-                                                <option value="평신도">평신도</option>
-                                                <option value="사모">사모</option>
-                                                <option value="간사">간사</option>
-                                                <option value="기타">기타</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>지역</dt>
-                                <dd>
-                                    <div>
-                                        <div class="input-box">
-                                            <select class="custom">
-                                                <option value="서울" selected="">서울</option>
-                                                <option value="강원">강원</option>
-                                                <option value="경기">경기</option>
-                                                <option value="대전">대전</option>
-                                                <option value="충청">충청</option>
-                                                <option value="전라">전라</option>
-                                                <option value="경상">경상</option>
-                                                <option value="제주">제주</option>
-                                                <option value="기타">기타</option>
-                                                <option value="해외">해외</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>주소</dt>
-                                <dd>
-                                    <div class="address">
-                                        <div class="input-box">
-                                            <input type="text" class="custom" placeholder="우편번호" readonly />
-                                            <a href="javascript:;" class="button gray-radius">주소찾기</a>
-                                        </div>
-                                        <input type="text" class="custom" placeholder="주소" readonly />
-                                        <input type="text" class="custom" placeholder="상세주소" />
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-                    </ul>
-                    <div class="center-btns mt-20">
-                        <a href="javascript:;" class="button gray-radius">수정하기</a>
+                                    </td>
+                                    <td>
+                                        <span class="red bold"><em>12,000</em>원</span>
+                                        <span class="font-xxs">(배송비:<em>3,000</em>원)</span>
+                                    </td>
+                                    <td>
+                                        <span class="blue bold">판매완료</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="board-paging">
+                        <div class="button-wrapper">
+                            <a href="javascript:;" class="button gray-radius">설정</a>
+                        </div>
+                        <div class="paging-wrapper">
+                            <a href="javascript:;" class="paging-button prev-all">맨앞으로</a>
+                            <a href="javascript:;" class="paging-button prev">이전</a>
+                            <ul class="paging-number">
+                                <li class="active"><a href="javascript:;">1</a></li>
+                                <li><a href="javascript:;">2</a></li>
+                            </ul>
+                            <a href="javascript:;" class="paging-button next">다음</a>
+                            <a href="javascript:;" class="paging-button next-all">맨뒤로</a>
+                        </div>
                     </div>
                 </div>
-                <!-- //write-wrapper -->
             </div>
             <div class="page-sidebar">
                 <h4>나의계정</h4>
-
                 <ul class="menu-list">
                     <li><a href="../shop/SH0201.html">장바구니</a></li>
                     <li><a href="../mypage/MY0101.html">수강내역/파일다운로드</a></li>

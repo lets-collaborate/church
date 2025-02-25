@@ -1,6 +1,7 @@
 /* 13 14 16 18 20  */
 
 :root {
+    --font-size-xxs: 11px;
     --font-size-xs: 12px;
     --font-size-small: 13px;
     --font-size-basic: 14px;
@@ -34,4 +35,8 @@ strong {
 
 .italic {
     font-style: italic;
+}
+
+.font-xxs {
+    font-size: var(--font-size-xxs);
 }
