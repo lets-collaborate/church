@@ -462,7 +462,6 @@ input.custom.wd-medium {
     padding-top: 3rem;
     padding-bottom: 1.5rem;
     box-sizing: border-box;
-    line-height: 100%;
     border-bottom: 1px solid var(--gray-neutral5);
     margin-bottom: 3rem;
 }
@@ -551,6 +550,11 @@ input.custom.wd-medium {
     vertical-align: text-top;
     width: 0.9rem;
     height: 1rem;
+}
+
+.board-wrapper .board-list td .reply-count {
+    font-weight: normal;
+    margin-left: .3rem;
 }
 
 /* 서브페이지 컨텐츠 영역 내 리스트 페이징 */

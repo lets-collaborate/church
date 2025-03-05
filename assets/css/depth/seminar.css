@@ -162,14 +162,14 @@
     line-height: 3rem;
 }
 
-/* SE0301 강사요청 */
+/* SE0301 세미나 강사 요청 */
 .page-content .write-wrapper.reg-lecturer .smart-editor {
     min-height: 30rem;
 }
 
-.page-content .write-wrapper.reg-lecturer .agree-wrapper .agree-content > div {
+.page-content .write-wrapper.reg-lecturer .agree-wrapper .agree-content>div {
     margin-top: 1rem;
-  }
+}
 
 .page-content .write-wrapper.reg-lecturer .agree-wrapper .agree-content .bdr-box.scroll-box {
     height: 15rem;
@@ -220,12 +220,12 @@
         display: none;
     }
 
-    /* SE0301 강사요청 */
+    /* SE0301 세미나 강사 요청 */
     .page-content .write-wrapper.reg-lecturer .input-box input.custom {
         width: 100%;
     }
 
-    /* SE0403 세미나 후기 - 글쓰기/답변 */
+    /* SE0403 세미나 참여 후기 - 글쓰기/답변 */
     .page-content .write-wrapper.review .input-box input.custom {
         width: 100%;
     }
