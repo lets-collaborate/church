@@ -348,8 +348,8 @@
                             </div>
                             <div class="agree-box bdr-box">
                                 <div class="check-wrapper">
-                                    <input type="checkbox" id="user-ts" />
-                                    <label for="user-ts">이용약관에 대한 내용을 읽고 이에 동의합니다</label>
+                                    <input type="checkbox" id="agree_ts" />
+                                    <label for="agree_ts">이용약관에 대한 내용을 읽고 이에 동의합니다</label>
                                 </div>
                             </div>
                         </div>
@@ -436,8 +436,8 @@
                             </div>
                             <div class="agree-box bdr-box">
                                 <div class="check-wrapper">
-                                    <input type="checkbox" id="user-pp" />
-                                    <label for="user-pp">개인정보처리방침에 대한 내용을 읽고 이에 동의합니다</label>
+                                    <input type="checkbox" id="agree_pp" />
+                                    <label for="agree_pp">개인정보처리방침에 대한 내용을 읽고 이에 동의합니다</label>
                                 </div>
                             </div>
                         </div>
@@ -639,8 +639,8 @@
     <script>
         // 모두 동의 체크박스
         const agreeAllCheckbox = document.getElementById('user-agree-all');
-        const termsCheckbox = document.getElementById('user-ts');
-        const privacyCheckbox = document.getElementById('user-pp');
+        const termsCheckbox = document.getElementById('agree_ts');
+        const privacyCheckbox = document.getElementById('agree_pp');
 
         agreeAllCheckbox.addEventListener('change', function () {
             const isChecked = agreeAllCheckbox.checked;

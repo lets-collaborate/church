@@ -9,7 +9,7 @@
   margin: 0 auto;
 }
 
-.page-content .agree-wrapper .agree-content > div:not(:last-child) {
+.page-content .agree-wrapper .agree-content>div:not(:last-child) {
   margin-bottom: 2rem;
 }
 
@@ -33,10 +33,27 @@
 
 .page-content .agree-wrapper .agree-content .bdr-box {
   font-size: var(--font-size-normal);
+  line-height: 2.8rem;
+  color: var(--gray-dark1);
 }
 
 .page-content .agree-wrapper .agree-content .bdr-box.scroll-box {
   height: 20rem;
+}
+
+.page-content .agree-wrapper .agree-content .agree-box .check-wrapper {
+  align-items: flex-start;
+}
+
+.page-content .agree-wrapper .agree-content .agree-box .check-wrapper input[type="checkbox"] {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+.page-content .agree-wrapper .agree-content .agree-box .check-wrapper>label {
+  font-size: var(--font-size-small);
+  color: var(--gray-dark3);
+  line-height: 1.9rem;
 }
 
 /* ST0102 회원가입 - 정보입력 */
@@ -46,7 +63,7 @@
 
 .page-content .write-wrapper.join-info .define-list {
   border-top: 0;
-} 
+}
 
 .page-content .write-wrapper.join-info .center-btns {
   padding: 2rem 0;
@@ -84,11 +101,11 @@
   align-items: center;
 }
 
-.page-content .login-wrapper .login-content dl + dl {
+.page-content .login-wrapper .login-content dl+dl {
   margin-top: 1.5rem;
 }
 
-.page-content .login-wrapper .login-content dl > dt {
+.page-content .login-wrapper .login-content dl>dt {
   width: 7rem;
   color: var(--gray-dark2);
   font-weight: var(--bold);
@@ -124,7 +141,7 @@
   margin-top: 4rem;
 }
 
-.page-content .login-wrapper .btn-wrap > * {
+.page-content .login-wrapper .btn-wrap>* {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,7 +167,7 @@
   margin-bottom: 4rem;
 }
 
-.page-content .write-wrapper.find > div + div {
+.page-content .write-wrapper.find>div+div {
   margin-top: 4rem;
 }
 
@@ -170,14 +187,6 @@
 
 /******************** 미디어쿼리 ********************/
 @media (max-width: 767px) {
-  /* ST0101 회원가입 - 이용약관 */
-  .page-content .agree-wrapper .agree-content .agree-box .check-wrapper {
-    align-items: flex-start;
-  }
-
-  .page-content .agree-wrapper .agree-content .agree-box .check-wrapper > label {
-    line-height: 1.8rem;
-  }
 
   /* ST0201 로그인 */
   .page-content .login-wrapper {
@@ -195,7 +204,7 @@
     display: block;
   }
 
-  .page-content .login-wrapper .login-content dl > dt {
+  .page-content .login-wrapper .login-content dl>dt {
     margin-bottom: 0.2rem;
   }
 
@@ -210,7 +219,7 @@
     margin-top: 3rem;
   }
 
-  .page-content .login-wrapper .btn-wrap > * {
+  .page-content .login-wrapper .btn-wrap>* {
     width: 25rem;
     height: 4rem;
   }
@@ -229,6 +238,7 @@
 }
 
 @media (max-width: 480px) {
+
   /* ST0102 회원가입 - 정보입력 */
   .page-content .write-wrapper.join-info .input-box input.custom {
     width: 100%;
