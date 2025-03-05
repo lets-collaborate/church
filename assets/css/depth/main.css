@@ -11,7 +11,7 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-.page-main .visual-wrapper .swiper-slide:after {
+.page-main .visual-wrapper .swiper-slide:not(.swiper-slide-active):after {
     content: '';
     position: absolute;
     width: 100%;
@@ -20,7 +20,13 @@
     transition: all 1s;
 }
 
-.page-main .visual-wrapper .swiper-slide>img {
+.page-main .visual-wrapper .swiper-slide>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.page-main .visual-wrapper .swiper-slide>a>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
