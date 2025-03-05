@@ -19,7 +19,8 @@
 
 .page-content .board-wrapper.shop .product-list>li {
     width: calc(25% - 1rem);
-    border: 1px solid var(--gray-neutral3)
+    border: 1px solid var(--gray-neutral3);
+    overflow: hidden;
 }
 
 .page-content .board-wrapper.shop .product-list>li>a {
@@ -145,7 +146,7 @@
 }
 
 /* SH0301 결제 - 주문/결제 */
-.page-content.orderpay .write-wrapper > div {
+.page-content.orderpay .write-wrapper>div {
     margin-top: 2.5rem;
 }
 
@@ -155,7 +156,7 @@
     margin-top: 0.3rem;
 }
 
-.page-content.orderpay .write-wrapper .define-list > li dl > dt {
+.page-content.orderpay .write-wrapper .define-list>li dl>dt {
     width: 11rem;
 }
 
@@ -169,7 +170,7 @@
     text-align: right;
 }
 
-.page-content.orderpay .write-wrapper > div.pay-info .box {
+.page-content.orderpay .write-wrapper>div.pay-info .box {
     display: flex;
     justify-content: space-between;
 }
@@ -210,11 +211,11 @@
     border-bottom: 1px dashed var(--gray-neutral3);
 }
 
-.page-content.orderpay .billing-pay .check-wrapper.all-check > input {
+.page-content.orderpay .billing-pay .check-wrapper.all-check>input {
     margin-top: 0.2rem;
 }
 
-.page-content.orderpay .billing-pay .check-wrapper.all-check > label {
+.page-content.orderpay .billing-pay .check-wrapper.all-check>label {
     color: var(--gray-dark3);
     line-height: 1.8rem;
     letter-spacing: -0.1rem;
@@ -247,12 +248,12 @@
     margin-top: 2rem;
 }
 
-.page-content.orderpay .check-wrapper:has(#order-info:not(:checked)) ~ .order-info-list {
+.page-content.orderpay .check-wrapper:has(#order-info:not(:checked))~.order-info-list {
     display: none;
 }
 
 /* SH0302 결제 - 주문완료 */
-.page-content.order-result .word-wrapper > div + div {
+.page-content.order-result .word-wrapper>div+div {
     margin-top: 4.5rem;
 }
 
@@ -347,7 +348,7 @@
         flex-direction: column;
     }
 
-    .page-content.orderpay .write-wrapper > div.pay-info .box {
+    .page-content.orderpay .write-wrapper>div.pay-info .box {
         flex-direction: column;
     }
 
@@ -356,7 +357,7 @@
         margin-left: 0;
         margin-top: 1rem;
     }
-    
+
     /* SH0302 결제 - 주문완료 */
     .page-content.order-result .order-item .description {
         display: none;
@@ -369,5 +370,5 @@
         width: 100%;
     }
 
-    
+
 }
